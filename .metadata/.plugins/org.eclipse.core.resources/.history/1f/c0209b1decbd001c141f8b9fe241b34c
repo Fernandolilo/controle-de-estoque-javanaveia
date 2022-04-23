@@ -1,0 +1,39 @@
+package com.javanaveia.bancodedadosmysql.bancodedadosmysql;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+
+		/*
+		 * //Connection conn = null; //String urlConnection =
+		 * "jdbc:mysql://localhost/test";
+		 */
+		System.out.println("----------------------------------------");
+
+		String driver = "mysql";
+		String dataBaseAdress = "localhost";
+		String databaseName = "test";
+		String user = "root";
+		String passwour = "root";
+
+		StringBuilder sb = new StringBuilder("jdbc:")
+				.append(driver).append("://")
+				.append(dataBaseAdress).append("/")
+				.append(databaseName);
+		String urlConnection = sb.toString();
+
+		try {
+			Connection conn = DriverManager.getConnection(urlConnection + user + passwour);
+			System.out.println("Sucesso ao conectar com o banco de dados MySql");
+		} catch (Exception e) {
+			System.out.println("Falha");
+		}
+
+	}
+}

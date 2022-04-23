@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="Categoria"/>
+		<list key="findhistory">
+			<item value="Category"/>
+			<item value="@RequestMapping(value = &quot;/page&quot;, method = RequestMethod.GET)&#x0A;&#x09;public ResponseEntity&lt;Page&lt;CategoryDTO&gt;&gt; findPage(&#x0A;            @RequestParam(value = &quot;page&quot;, defaultValue = &quot;0&quot;) Integer page,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;linesPerPage&quot;, defaultValue = &quot;24&quot;) Integer linesPerPage,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;direction&quot;, defaultValue = &quot;ASC&quot;) String direction,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;orderBy&quot;, defaultValue = &quot;name&quot;) String orderBy) {&#x0A;&#x09;&#x09;// pega a lista de categorias&#x0A;&#x09;&#x09;Page&lt;Category&gt; list = service.findPage(page, linesPerPage, orderBy, direction);&#x0A;&#x09;&#x09;// converte a lista de categorias para um CategoryDTO&#x0A;&#x09;&#x09;Page&lt;CategoryDTO&gt; listDto = list.map(obj -&gt; new CategoryDTO(obj));&#x0A;&#x09;&#x09;// retorna apenas dados nocessários.&#x0A;&#x09;&#x09;return ResponseEntity.ok().body(listDto);&#x0A;&#x09;}"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Categoria"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="512"/>
+		<item key="DIALOG_Y_ORIGIN" value="95"/>
+		<item key="DIALOG_WIDTH" value="343"/>
+		<item key="DIALOG_HEIGHT" value="432"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
+	</section>
+</section>
