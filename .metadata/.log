@@ -932,3 +932,113 @@ Binding(ALT+SHIFT+R,
 
 !ENTRY org.eclipse.ui 2 2 2022-04-22 22:55:34.767
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:04.780
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:04.786
+!MESSAGE buffering callback sts4.classpath.JVkuSYCV bancodedadosmysql true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:04.787
+!MESSAGE executing callback sts4.classpath.JVkuSYCV 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:04.791
+!MESSAGE executing callback sts4.classpath.JVkuSYCV SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:05.143
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JVkuSYCV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:05.144
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.JVkuSYCV
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:05.145
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:05.145
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JVkuSYCV => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:09.320
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:09.320
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5bba7758[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=560)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:09.321
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.297
+!MESSAGE Boot LS startup time from start to initialized: 2975ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.431
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.onxzblbSisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.431
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.432
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.432
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.433
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.433
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.onxzblbS => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.461
+!MESSAGE classpath=91 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.463
+!MESSAGE buffering callback sts4.classpath.onxzblbS control-in-stock false 91
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.464
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.465
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.466
+!MESSAGE buffering callback sts4.classpath.onxzblbS bancodedadosmysql false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.466
+!MESSAGE executing callback sts4.classpath.onxzblbS 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:45:12.883
+!MESSAGE executing callback sts4.classpath.onxzblbS SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:47:22.684
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:47:22.687
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:47:22.688
+!MESSAGE buffering callback sts4.classpath.onxzblbS control-in-stock false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:47:22.688
+!MESSAGE executing callback sts4.classpath.onxzblbS 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:47:22.702
+!MESSAGE executing callback sts4.classpath.onxzblbS SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:49:04.647
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:49:04.657
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:49:04.659
+!MESSAGE buffering callback sts4.classpath.onxzblbS control-in-stock false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:49:04.659
+!MESSAGE executing callback sts4.classpath.onxzblbS 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-22 23:49:04.671
+!MESSAGE executing callback sts4.classpath.onxzblbS SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 2 2 2022-04-22 23:50:04.947
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2022-04-22 23:50:04.947
+!MESSAGE The project description file (.project) for 'bancodedadosmysql' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

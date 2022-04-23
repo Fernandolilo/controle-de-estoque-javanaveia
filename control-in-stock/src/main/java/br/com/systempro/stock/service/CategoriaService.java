@@ -9,6 +9,7 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
 import br.com.systempro.stock.domain.Categoria;
+import br.com.systempro.stock.domain.dto.CategoriaDTO;
 import br.com.systempro.stock.repositories.CategoriaRepository;
 import br.com.systempro.stock.service.exceptions.ObjectNotFoundException;
 
@@ -33,4 +34,17 @@ public class CategoriaService {
 				"Objeto não encontrado ID: " + ", Tipo: " + Categoria.class.getName()));
 	}
 
+	public Categoria update (Categoria obj) {
+		Categoria newObj = findById(obj.getId());
+		updateData(newObj, obj);
+		return repository.save(newObj);
+	}
+	
+	private void updateData( Categoria newObj, Categoria obj) {
+		newObj.setName(obj.getName());
+	}
+	
+	public Categoria fromDTO (CategoriaDTO objDto) {
+		return new Categoria(objDto.getId(), objDto.getName());
+	}
 }
