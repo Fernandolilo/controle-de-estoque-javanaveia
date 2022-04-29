@@ -1,0 +1,29 @@
+package com.javanaveia.bancodedadosmysql.bancodedadosmysql;
+
+import java.sql.Connection;
+
+import com.javanaveia.bancodedadosmysql.bancodedadosmysql.connection.ConnectionFactory;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		
+		Connection conn = null;
+		
+		try {
+			
+			conn = ConnectionFactory.getConnection();
+			if( conn != null) {
+				System.out.println("Conexão com banco de dados ok");
+			}
+			
+		} catch (ClassNotFoundException e) {
+			System.out.println("Falha na conexão com o banco de dados");
+			e.printStackTrace();
+		}
+
+	}
+}

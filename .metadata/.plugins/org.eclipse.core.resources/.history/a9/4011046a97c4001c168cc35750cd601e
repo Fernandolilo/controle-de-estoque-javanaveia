@@ -1,0 +1,5 @@
+package com.javanaveia.bancodedadosmysql.bancodedadosmysql;
+
+public class ConnectionFactory {
+
+}

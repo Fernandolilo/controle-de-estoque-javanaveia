@@ -1,0 +1,33 @@
+package com.javanaveia.bancodedadosmysql.bancodedadosmysql.connection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectionFactory {
+	/*
+	 * conn = DriverManager.getConnection( "jdbc:mysql://localhost/test", "root",
+	 * "root");
+	 */
+
+	System.out.println("-----Melhorando class de acesso ao BD MySql-----");
+
+	String driver = "mysql";
+	String dataBaseAdress = "localhost";
+	String dataBaseName = "test";
+	String user = "root";
+	String password = "root";
+
+	StringBuilder sb = new StringBuilder("jdbc:")
+			.append(driver).append("://")
+			.append(dataBaseAdress).append("/")
+			.append(dataBaseName);
+	String connectionURL = sb.toString();
+
+	try {
+		Connection conn = DriverManager.getConnection(connectionURL, user, password);
+		System.out.println("Sucesso em conectar-se ao BD MySql");
+	} catch (Exception e) {
+
+		System.out.println("Falha ao conectar-se ao BD MySql");
+	}
+}

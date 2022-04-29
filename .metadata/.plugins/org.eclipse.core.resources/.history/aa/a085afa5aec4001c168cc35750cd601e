@@ -1,0 +1,23 @@
+package com.javanaveia.bancodedadosmysql.bancodedadosmysql;
+
+import java.sql.Connection;
+
+import com.javanaveia.bancodedadosmysql.bancodedadosmysql.dao.AlunoDAO;
+import com.javanaveia.bancodedadosmysql.bancodedadosmysql.model.Aluno;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) throws ClassNotFoundException {
+
+		Connection conn = null;
+
+		AlunoDAO dao = new AlunoDAO();
+		System.out.println(dao.getAluno().toString());
+
+		
+
+	}
+}

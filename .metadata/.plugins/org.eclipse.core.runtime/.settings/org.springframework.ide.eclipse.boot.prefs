@@ -2,6 +2,7 @@ eclipse.preferences.version=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.h2=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.validation=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=1
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=control-in-stock
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.7.0-M3

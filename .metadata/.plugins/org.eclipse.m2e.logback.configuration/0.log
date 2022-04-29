@@ -3509,3 +3509,663 @@ org.eclipse.core.runtime.CoreException: Launch configuration App references non-
 2022-04-23 00:03:18,450 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-04-23 00:03:18,450 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-04-23 00:03:18,450 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-23 00:12:31,097 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 00:12:31,097 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-23 00:12:31,098 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-23 00:12:31,127 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-23 00:12:31,131 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 00:12:31,131 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-23 00:12:31,131 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-23 00:12:31,299 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 00:12:31,300 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-23 00:12:31,300 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-23 00:12:31,321 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-23 00:12:31,327 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 00:12:31,328 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-23 00:12:31,328 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-23 22:03:22,406 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-04-23 22:07:22,599 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javanaveia.bancodedadosmysql:bancodedadosmysql:0.0.1-SNAPSHOT @ /home/fernando/temp-sts/bancodedadosmysql/pom.xml.
+2022-04-23 22:07:23,065 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/main/java
+2022-04-23 22:07:23,067 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/test/java
+2022-04-23 22:07:23,117 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2022-04-23 22:07:23,475 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:07:23,475 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:07:23,480 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:07:23,481 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:14:50,470 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:14:50,471 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:14:50,473 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:14:50,473 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:16:19,525 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:16:19,525 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:16:19,527 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:16:19,528 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:16:24,407 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:16:24,408 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:16:24,411 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:16:24,411 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:16:37,595 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-04-23 22:17:08,857 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:17:08,858 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:17:08,861 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:17:08,861 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:18:14,190 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:18:14,190 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:18:14,193 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:18:14,193 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:18:45,066 [Worker-5: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:18:45,067 [Worker-5: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:18:45,069 [Worker-5: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:18:45,069 [Worker-5: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:21:33,655 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:21:33,656 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:21:33,657 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:21:33,658 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:37:00,043 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-23 22:37:00,789 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javanaveia.bancodedadosmysql:bancodedadosmysql:0.0.1-SNAPSHOT @ /home/fernando/temp-sts/bancodedadosmysql/pom.xml.
+2022-04-23 22:37:01,171 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/main/java
+2022-04-23 22:37:01,172 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/test/java
+2022-04-23 22:37:01,309 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-04-23 22:37:01,487 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:37:01,488 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:37:01,491 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:37:01,491 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:38:02,029 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:38:02,029 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:38:02,032 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:38:02,032 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:38:20,805 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-23 22:38:21,106 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javanaveia.bancodedadosmysql:bancodedadosmysql:0.0.1-SNAPSHOT @ /home/fernando/temp-sts/bancodedadosmysql/pom.xml.
+2022-04-23 22:38:21,313 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/main/java
+2022-04-23 22:38:21,315 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/test/java
+2022-04-23 22:38:21,404 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-04-23 22:38:21,572 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:38:21,572 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:38:21,574 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:38:21,574 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:38:50,645 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:38:50,645 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:38:50,653 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:38:50,654 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:38:58,895 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-23 22:38:59,175 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javanaveia.bancodedadosmysql:bancodedadosmysql:0.0.1-SNAPSHOT @ /home/fernando/temp-sts/bancodedadosmysql/pom.xml.
+2022-04-23 22:38:59,392 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/main/java
+2022-04-23 22:38:59,393 [Worker-2: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/test/java
+2022-04-23 22:38:59,486 [Worker-2: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-04-23 22:38:59,744 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:38:59,745 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:38:59,748 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:38:59,748 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:39:34,044 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:39:34,044 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:39:34,046 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:39:34,046 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:40:43,239 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:40:43,239 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:40:43,241 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:40:43,241 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 22:47:35,866 [Worker-1: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:47:35,867 [Worker-1: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 22:47:35,870 [Worker-1: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 22:47:35,870 [Worker-1: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 23:02:38,659 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:02:38,660 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 23:02:38,662 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:02:38,663 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 23:03:54,573 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:03:54,573 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 23:03:54,575 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:03:54,576 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 23:04:03,017 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-23 23:04:03,578 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.javanaveia.bancodedadosmysql:bancodedadosmysql:0.0.1-SNAPSHOT @ /home/fernando/temp-sts/bancodedadosmysql/pom.xml.
+2022-04-23 23:04:03,970 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/main/java
+2022-04-23 23:04:03,970 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bancodedadosmysql/src/test/java
+2022-04-23 23:04:04,054 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2022-04-23 23:04:04,223 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:04:04,223 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 23:04:04,226 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:04:04,227 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 23:05:56,354 [Worker-16: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:05:56,355 [Worker-16: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 23:05:56,356 [Worker-16: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:05:56,356 [Worker-16: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-23 23:08:12,126 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:08:12,127 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-23 23:08:12,129 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-23 23:08:12,129 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 09:56:41,186 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-04-25 09:58:34,970 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 09:58:34,972 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 09:58:34,975 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 09:58:34,976 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 09:59:26,496 [Worker-0: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 09:59:26,496 [Worker-0: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 09:59:26,499 [Worker-0: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 09:59:26,499 [Worker-0: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 09:59:48,773 [Worker-7: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 09:59:48,774 [Worker-7: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 09:59:48,778 [Worker-7: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 09:59:48,778 [Worker-7: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 10:03:24,003 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:03:24,005 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 10:03:24,008 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:03:24,009 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 10:10:43,770 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:10:43,770 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 10:10:43,771 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:10:43,771 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 10:22:10,397 [Worker-12: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:22:10,399 [Worker-12: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 10:22:10,401 [Worker-12: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:22:10,402 [Worker-12: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 10:22:29,785 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:22:29,785 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 10:22:29,787 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:22:29,787 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 10:23:12,916 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:23:12,916 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 10:23:12,919 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 10:23:12,919 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:05:02,741 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:05:02,742 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:05:02,745 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:05:02,745 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:07:25,123 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:07:25,123 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:07:25,125 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:07:25,125 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:07:47,852 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:07:47,852 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:07:47,853 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:07:47,854 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:21:03,427 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:21:03,428 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:21:03,429 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:21:03,429 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:22:48,953 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:22:48,953 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:22:48,955 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:22:48,956 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:22:57,117 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:22:57,117 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:22:57,118 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:22:57,118 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:24:02,836 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:24:02,837 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:24:02,839 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:24:02,839 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:25:29,519 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:25:29,519 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:25:29,523 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:25:29,523 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:26:53,759 [Worker-13: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:26:53,759 [Worker-13: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:26:53,762 [Worker-13: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:26:53,763 [Worker-13: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:27:21,015 [Worker-15: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:27:21,015 [Worker-15: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:27:21,018 [Worker-15: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:27:21,019 [Worker-15: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:27:49,526 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:27:49,526 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:27:49,528 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:27:49,528 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:28:28,810 [Worker-15: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:28:28,810 [Worker-15: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:28:28,812 [Worker-15: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:28:28,813 [Worker-15: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:50:22,709 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:50:22,709 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:50:22,712 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:50:22,713 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:51:36,386 [Worker-21: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:51:36,386 [Worker-21: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:51:36,388 [Worker-21: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:51:36,388 [Worker-21: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 11:52:11,511 [Worker-23: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:52:11,511 [Worker-23: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 11:52:11,513 [Worker-23: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 11:52:11,513 [Worker-23: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:00:24,857 [Worker-25: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:00:24,857 [Worker-25: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:00:24,858 [Worker-25: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:00:24,858 [Worker-25: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:01:08,852 [Worker-24: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:01:08,852 [Worker-24: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:01:08,855 [Worker-24: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:01:08,855 [Worker-24: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:02:15,386 [Worker-22: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:02:15,387 [Worker-22: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:02:15,389 [Worker-22: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:02:15,389 [Worker-22: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:16:19,448 [Worker-25: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:16:19,448 [Worker-25: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:16:19,449 [Worker-25: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:16:19,450 [Worker-25: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:18:13,305 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:18:13,306 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:18:13,333 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:18:13,334 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:18:37,168 [Worker-22: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:18:37,168 [Worker-22: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:18:37,170 [Worker-22: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:18:37,170 [Worker-22: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:20:40,753 [Worker-27: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:20:40,754 [Worker-27: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:20:40,755 [Worker-27: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:20:40,755 [Worker-27: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:22:45,387 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:22:45,387 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:22:45,389 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:22:45,389 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:22:55,145 [Worker-30: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:22:55,145 [Worker-30: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:22:55,147 [Worker-30: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:22:55,147 [Worker-30: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:25:59,560 [Worker-21: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:25:59,561 [Worker-21: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:25:59,563 [Worker-21: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:25:59,564 [Worker-21: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:26:50,667 [Worker-29: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:26:50,667 [Worker-29: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:26:50,669 [Worker-29: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:26:50,669 [Worker-29: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:28:24,595 [Worker-31: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:28:24,595 [Worker-31: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:28:24,597 [Worker-31: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:28:24,597 [Worker-31: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:32:42,940 [Worker-29: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:32:42,940 [Worker-29: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:32:42,941 [Worker-29: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:32:42,941 [Worker-29: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:33:40,572 [Worker-30: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:33:40,573 [Worker-30: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:33:40,575 [Worker-30: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:33:40,576 [Worker-30: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:35:57,037 [Worker-35: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:35:57,037 [Worker-35: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:35:57,039 [Worker-35: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:35:57,039 [Worker-35: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:36:22,117 [Worker-39: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:36:22,118 [Worker-39: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:36:22,120 [Worker-39: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:36:22,121 [Worker-39: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:37:24,255 [Worker-38: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:37:24,255 [Worker-38: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:37:24,257 [Worker-38: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:37:24,258 [Worker-38: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:37:49,421 [Worker-37: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:37:49,422 [Worker-37: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:37:49,424 [Worker-37: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:37:49,424 [Worker-37: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:38:59,674 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:38:59,674 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:38:59,675 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:38:59,676 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:39:19,601 [Worker-35: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:39:19,601 [Worker-35: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:39:19,603 [Worker-35: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:39:19,603 [Worker-35: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:44:40,047 [Worker-34: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:44:40,047 [Worker-34: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:44:40,049 [Worker-34: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:44:40,049 [Worker-34: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 12:44:52,492 [Worker-34: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:44:52,492 [Worker-34: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 12:44:52,494 [Worker-34: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 12:44:52,494 [Worker-34: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 13:39:34,513 [Worker-45: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 13:39:34,514 [Worker-45: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 13:39:34,515 [Worker-45: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 13:39:34,515 [Worker-45: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 13:40:23,955 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 13:40:23,956 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 13:40:23,956 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 13:40:23,957 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 13:40:27,487 [Worker-45: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 13:40:27,487 [Worker-45: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 13:40:27,489 [Worker-45: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 13:40:27,490 [Worker-45: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 13:40:50,473 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 13:40:50,473 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 13:40:50,474 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 13:40:50,475 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:07:01,991 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:07:01,992 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:07:01,993 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:07:01,994 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:07:29,821 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:07:29,822 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:07:29,823 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:07:29,823 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:17:52,985 [Worker-56: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:17:52,985 [Worker-56: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:17:52,987 [Worker-56: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:17:52,987 [Worker-56: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:21:56,383 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:21:56,383 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:21:56,388 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:21:56,388 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:22:33,568 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:22:33,568 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:22:33,570 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:22:33,571 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:22:52,796 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:22:52,797 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:22:52,798 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:22:52,798 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:29:54,397 [Worker-60: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:29:54,397 [Worker-60: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:29:54,398 [Worker-60: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:29:54,398 [Worker-60: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:30:40,781 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:30:40,781 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:30:40,784 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:30:40,784 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:31:54,760 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:31:54,761 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:31:54,762 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:31:54,762 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:31:57,562 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:31:57,562 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:31:57,563 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:31:57,563 [Worker-54: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:39:41,539 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:39:41,540 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:39:41,541 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:39:41,542 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:43:18,543 [Worker-61: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:43:18,543 [Worker-61: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:43:18,548 [Worker-61: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:43:18,548 [Worker-61: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:45:03,019 [Worker-62: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:45:03,020 [Worker-62: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:45:03,022 [Worker-62: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:45:03,022 [Worker-62: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:46:39,050 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:46:39,050 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:46:39,052 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:46:39,053 [Worker-53: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-25 14:48:34,825 [Worker-60: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:48:34,826 [Worker-60: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/main/resources
+2022-04-25 14:48:34,827 [Worker-60: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-25 14:48:34,827 [Worker-60: Launching App (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/bancodedadosmysql/src/test/resources
+2022-04-26 05:06:44,885 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-04-26 14:21:43,918 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-04-26 14:22:01,933 [Worker-9: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App (1) references closed project bancodedadosmysql
+org.eclipse.core.runtime.CoreException: Launch configuration App (1) references closed project bancodedadosmysql
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:523)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:401)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-04-26 14:22:01,938 [Worker-9: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App (1) references closed project bancodedadosmysql
+org.eclipse.core.runtime.CoreException: Launch configuration App (1) references closed project bancodedadosmysql
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:523)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:402)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-04-26 14:22:01,942 [Worker-9: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App (1) references closed project bancodedadosmysql
+org.eclipse.core.runtime.CoreException: Launch configuration App (1) references closed project bancodedadosmysql
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1733)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2128)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:376)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:403)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-04-26 14:22:03,625 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-26 14:22:03,625 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-26 14:22:03,629 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-26 14:22:03,652 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-26 14:22:03,657 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-26 14:22:03,657 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-26 14:22:03,657 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-26 14:47:56,749 [Worker-15: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-26 14:47:56,750 [Worker-15: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-26 14:47:56,754 [Worker-15: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-26 14:47:56,798 [Worker-15: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-26 14:47:56,804 [Worker-15: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-26 14:47:56,804 [Worker-15: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-26 14:47:56,804 [Worker-15: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-26 14:51:31,965 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-26 14:51:31,966 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-26 14:51:31,966 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-26 14:51:31,983 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-26 14:51:31,986 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-26 14:51:31,986 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-26 14:51:31,987 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-26 15:19:45,388 [Worker-22: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-26 15:19:45,389 [Worker-22: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-26 15:19:45,393 [Worker-22: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-26 15:19:45,453 [Worker-22: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-26 15:19:45,496 [Worker-22: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-26 15:19:45,496 [Worker-22: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-26 15:19:45,496 [Worker-22: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-28 07:06:11,533 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-04-29 06:53:54,302 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-04-29 06:57:04,061 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-04-29 06:57:04,923 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.systempro:control-in-stock:0.0.1-SNAPSHOT @ /home/fernando/temp-sts/controle-estoque/control-in-stock/pom.xml.
+2022-04-29 06:57:06,013 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /control-in-stock/src/main/java
+2022-04-29 06:57:06,014 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /control-in-stock/src/main/resources
+2022-04-29 06:57:06,015 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /control-in-stock/src/main/resources
+2022-04-29 06:57:06,016 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /control-in-stock/src/test/java
+2022-04-29 06:57:06,520 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-04-29 06:57:08,037 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 06:57:08,037 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 06:57:08,043 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 06:57:08,068 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 06:57:08,074 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 06:57:08,075 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 06:57:08,075 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 06:57:08,277 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 06:57:08,277 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 06:57:08,277 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 06:57:08,306 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 06:57:08,311 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 06:57:08,311 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 06:57:08,311 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:02:58,491 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:02:58,491 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:02:58,495 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:02:58,497 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:02:58,501 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:02:58,501 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:02:58,501 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:10:01,028 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:10:01,028 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:10:01,029 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:10:01,093 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:10:01,098 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:10:01,098 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:10:01,098 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:14:01,870 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:14:01,870 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:14:01,871 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:14:01,873 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:14:01,876 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:14:01,876 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:14:01,876 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:15:09,492 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:15:09,492 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:15:09,492 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:15:09,570 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:15:09,573 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:15:09,574 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:15:09,574 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:16:12,189 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:16:12,189 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:16:12,189 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:16:12,191 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:16:12,196 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:16:12,196 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:16:12,197 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:16:36,661 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:16:36,662 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:16:36,662 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:16:36,663 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:16:36,666 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:16:36,667 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:16:36,667 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:17:28,853 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:17:28,853 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:17:28,853 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:17:28,948 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:17:28,952 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:17:28,952 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:17:28,952 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:17:29,110 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:17:29,110 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:17:29,110 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:17:29,164 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:17:29,168 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:17:29,169 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:17:29,169 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:19:42,832 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:19:42,833 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:19:42,834 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:19:42,837 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:19:42,842 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:19:42,842 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:19:42,842 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:24:06,436 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:24:06,437 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:24:06,437 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:24:06,438 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:24:06,442 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:24:06,442 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:24:06,442 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:25:34,701 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:25:34,702 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:25:34,702 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:25:34,703 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:25:34,706 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:25:34,706 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:25:34,706 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:25:53,233 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:25:53,233 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:25:53,234 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:25:53,235 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:25:53,237 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:25:53,237 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:25:53,237 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:31:33,181 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:31:33,181 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:31:33,182 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:31:33,183 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:31:33,186 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:31:33,187 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:31:33,187 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:33:57,129 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:33:57,129 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:33:57,129 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:33:57,153 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:33:57,159 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:33:57,159 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:33:57,160 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:47:31,583 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:47:31,613 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:47:31,614 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:47:31,616 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:47:31,619 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:47:31,620 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:47:31,620 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:47:37,129 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:47:37,129 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:47:37,129 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:47:37,160 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:47:37,164 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:47:37,164 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:47:37,164 [Worker-13: Launching control-in-stock - ControlInStockApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:50:53,054 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:50:53,054 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:50:53,054 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:50:53,072 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:50:53,075 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:50:53,075 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:50:53,075 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:51:32,175 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:51:32,175 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:51:32,175 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:51:32,243 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:51:32,279 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:51:32,279 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:51:32,279 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 07:52:36,207 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:52:36,207 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:52:36,207 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 07:52:36,208 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 07:52:36,210 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 07:52:36,210 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 07:52:36,210 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 08:01:00,126 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 08:01:00,127 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 08:01:00,129 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 08:01:00,151 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 08:01:00,154 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 08:01:00,155 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 08:01:00,155 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 08:01:00,315 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 08:01:00,315 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 08:01:00,316 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 08:01:00,338 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 08:01:00,340 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 08:01:00,340 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 08:01:00,340 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources
+2022-04-29 08:27:17,590 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 08:27:17,590 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 08:27:17,591 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-04-29 08:27:17,624 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-04-29 08:27:17,628 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-04-29 08:27:17,628 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-04-29 08:27:17,628 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-stock/src/test/resources

@@ -1,0 +1,5 @@
+package com.javanaveia.bancodedadosmysql.bancodedadosmysql.model;
+
+public class Aluno {
+
+}

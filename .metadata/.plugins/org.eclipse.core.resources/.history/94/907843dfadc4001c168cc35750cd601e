@@ -1,0 +1,44 @@
+package com.javanaveia.bancodedadosmysql.bancodedadosmysql;
+
+import java.sql.Connection;
+
+import com.javanaveia.bancodedadosmysql.bancodedadosmysql.dao.AlunoDAO;
+import com.javanaveia.bancodedadosmysql.bancodedadosmysql.model.Aluno;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) throws ClassNotFoundException {
+
+		Connection conn = null;
+
+		AlunoDAO dao = new AlunoDAO();
+		System.out.println(dao.getAluno().toString());
+
+		System.out.println("-------------------------------------------");
+
+		System.out.println(dao.findById(2));
+
+		System.out.println("-------------------------------------------");
+
+		/*
+		 * if (dao.findById(2) != null) { dao.delete(2);
+		 * System.out.println("Deletado com sucesso!"); }
+		 */
+		System.out.println("-------------------------------------------");
+		System.out.println(dao.getAluno().toString());
+
+		System.out.println("-------------------------------------------");
+
+		Aluno al = new Aluno();
+		al.setId(null);
+		al.setNome("Fernando Davi");
+		al.setIdade(50);
+		al.setEstado("PE");
+		dao.create(al);
+		dao.getAluno().forEach(System.out::println);
+
+	}
+}

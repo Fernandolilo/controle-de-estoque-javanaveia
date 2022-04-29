@@ -1,5 +1,0 @@
-package br.com.systempro.stock.controller.exceptions;
-
-public class ResourceExceptionHadler {
-
-}

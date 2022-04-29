@@ -1,0 +1,36 @@
+package com.javanaveia.bancodedadosmysql.bancodedadosmysql;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+
+		System.out.println("--------------------------------------------"); 
+
+		/*
+		 * definido paramentros para conexão com o BD, desta forma caso mude o BD,
+		 * fica mais facil uma mantenção; 
+		 */
+		 String driver = "mysql";
+		 String dataBaseAdress = "localhost";
+		 String dataBaseName = "test";
+		 String user = "root";
+		 String password = "root";
+
+		 StringBuilder sb = new StringBuilder("jdbc:")
+				 .append(driver).append("://")
+				 .append(dataBaseAdress).append("/")
+				 .append(dataBaseName);
+		 String connectionUrl = sb.toString();
+
+		 try {
+			Connection conn = DriverManager.getConnection(connectionUrl, user, password);
+			System.out.println("Sucesso ao conectar com banco MySql");
+		} catch (Exception e) {
+			System.out.println("Falha ao conectar com banco MySql");
+		}
+
+	}
+}
