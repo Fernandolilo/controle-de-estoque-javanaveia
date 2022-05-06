@@ -3,6 +3,7 @@ package br.com.systempro.stock.service;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 import br.com.systempro.stock.domain.Categoria;
 import br.com.systempro.stock.domain.dto.CategoriaDTO;
 import br.com.systempro.stock.repositories.CategoriaRepository;
+import br.com.systempro.stock.service.exceptions.DataIntegrityViolation;
 import br.com.systempro.stock.service.exceptions.ObjectNotFoundException;
 
 @Service
@@ -53,10 +55,16 @@ public class CategoriaService {
 		return repository.save(obj);		
 	}
 	
-	public void delete (Long id) {
+	public void delete(Long id) {
 		findById(id);
-		repository.deleteById(id);
+		try {
+			repository.deleteById(id);
+		} catch (DataIntegrityViolationException e) {
+			throw new DataIntegrityViolation("Não é possivel excluir uma categoria que possua produtos.");
+		}
+		
 	}
+	
 	
 	
 	

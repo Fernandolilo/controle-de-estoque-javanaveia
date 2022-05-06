@@ -15,7 +15,7 @@
 	<section name="completion_proposal_size">
 		<item key="contextSelector.size.x" value="313"/>
 		<item key="contextSelector.size.y" value="203"/>
-		<item key="size.x" value="513"/>
+		<item key="size.x" value="898"/>
 		<item key="size.y" value="226"/>
 	</section>
 	<section name="quick_assist_proposal_size">
@@ -88,5 +88,19 @@
 	</section>
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="SelfEncapsulateFieldWizard">
+		<item key="GenerateJavadoc" value="false"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+		<item key="updateTextualMatches" value="false"/>
+		<item key="updateQualifiedNames" value="false"/>
+		<item key="patterns" value="*"/>
 	</section>
 </section>
