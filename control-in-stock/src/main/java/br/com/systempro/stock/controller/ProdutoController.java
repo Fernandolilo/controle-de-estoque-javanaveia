@@ -18,7 +18,11 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.com.systempro.stock.domain.Produto;
 import br.com.systempro.stock.domain.dto.ProdutoDTO;
 import br.com.systempro.stock.service.ProdutoService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
+
+@Tag(name = "Produtos")
 @RestController
 @RequestMapping("/produtos")
 public class ProdutoController {
@@ -30,6 +34,7 @@ public class ProdutoController {
 		this.service = service;
 	}
 
+	@Operation(summary = "FindPage Produtos")
 	@RequestMapping(value = "/page", method = RequestMethod.GET)
 	public ResponseEntity<Page<ProdutoDTO>> findPage(@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "24") Integer linesPerPage,
@@ -43,12 +48,14 @@ public class ProdutoController {
 		return ResponseEntity.ok().body(listDTO);
 	}
 
+	@Operation(summary = "FindById Produtos")
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ResponseEntity<Produto> findById(@PathVariable Long id) {
 		Produto obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
 
+	@Operation(summary = "PUT Produtos")
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<Void> update(@Valid @RequestBody ProdutoDTO objDto, @PathVariable Long id) {
 		Produto obj = service.fromDTO(objDto);
@@ -57,6 +64,7 @@ public class ProdutoController {
 		return ResponseEntity.noContent().build();
 	}
 	
+	@Operation(summary = "POST Produtos")
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<Void> insert(@Valid @RequestBody ProdutoDTO objDto){
 		Produto obj = service.fromDTO(objDto);
@@ -67,7 +75,7 @@ public class ProdutoController {
 		return ResponseEntity.created(uri).build();
 	}
 	
-	
+	@Operation(summary = "DELETE Produtos")
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
 		service.delete(id);

@@ -18,7 +18,11 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.com.systempro.stock.domain.Categoria;
 import br.com.systempro.stock.domain.dto.CategoriaDTO;
 import br.com.systempro.stock.service.CategoriaService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
+
+
+@Tag(name = "Categorias")
 @RestController
 @RequestMapping("/categorias")
 public class CategoriaController {

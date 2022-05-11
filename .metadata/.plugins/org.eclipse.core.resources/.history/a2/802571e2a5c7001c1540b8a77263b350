@@ -1,5 +1,0 @@
-package br.com.systempro.stock.domain.dto;
-
-public class ProdutoDTO {
-
-}
