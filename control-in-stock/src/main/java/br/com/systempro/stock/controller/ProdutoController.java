@@ -1,6 +1,7 @@
 package br.com.systempro.stock.controller;
 
 import java.net.URI;
+import java.util.List;
 
 import javax.validation.Valid;
 
@@ -54,7 +55,13 @@ public class ProdutoController {
 		Produto obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
-
+	@Operation(summary = "FindByName Produtos")
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public List<ProdutoDTO> findByName(@RequestParam(name = "nome", required = true) String nome){
+		List<ProdutoDTO> list = service.findByName(nome);
+		return list;
+	}
+	
 	@Operation(summary = "PUT Produtos")
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<Void> update(@Valid @RequestBody ProdutoDTO objDto, @PathVariable Long id) {

@@ -36,6 +36,11 @@ public class ProdutoService {
 						"Objeto não encontrado ID: " + ", Tipo: " + Produto.class.getName()));
 	}
 	
+	public List<ProdutoDTO> findByName(String nome) {
+		List<ProdutoDTO> produtos = repository.findByNomeLike(nome);
+		return produtos;
+	}
+
 	public Produto update(Produto obj) {
 		Produto newObj = findById(obj.getId());
 		updateData(newObj, obj);
