@@ -1,5 +1,6 @@
 package br.com.systempro.stock.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +18,10 @@ import br.com.systempro.stock.service.exceptions.ObjectNotFoundException;
 public class ProdutoService {
 
 	private final ProdutoRepository repository;
-	private final CategoriaService categoriaService; 
 
 	@Autowired
-	public ProdutoService(ProdutoRepository repository, CategoriaService categoriaService) {
+	public ProdutoService(ProdutoRepository repository) {
 		this.repository = repository;
-		this.categoriaService = categoriaService;
 	}
 
 	public Page<Produto> findPage(Integer page, Integer linesPerPage, String orderBy, String direction) {
@@ -36,7 +35,7 @@ public class ProdutoService {
 				() -> new ObjectNotFoundException(
 						"Objeto não encontrado ID: " + ", Tipo: " + Produto.class.getName()));
 	}
-
+	
 	public Produto update(Produto obj) {
 		Produto newObj = findById(obj.getId());
 		updateData(newObj, obj);
@@ -48,7 +47,7 @@ public class ProdutoService {
 	}
 
 	public Produto fromDTO(ProdutoDTO objDto) {
-		return new Produto(objDto.getId(), objDto.getNome(), objDto.getPreco(), objDto.getQuantidade(),
+		return new Produto(objDto.getId(), objDto.getNome(),objDto.getMarca(), objDto.getPreco(), objDto.getQuantidade(),
 				objDto.getCategoria());
 	}
 

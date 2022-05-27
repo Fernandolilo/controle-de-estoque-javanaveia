@@ -22,7 +22,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 
-@Tag(name = "Produtos")
+@Tag(name = "Produtos endpoit")
 @RestController
 @RequestMapping("/produtos")
 public class ProdutoController {
@@ -42,11 +42,11 @@ public class ProdutoController {
 			@RequestParam(value = "orderBy", defaultValue = "nome") String nome) {
 
 		Page<Produto> list = service.findPage(page, linesPerPage, nome, direction);
-
 		Page<ProdutoDTO> listDTO = list.map(obj -> new ProdutoDTO(obj));
-
 		return ResponseEntity.ok().body(listDTO);
 	}
+
+	
 
 	@Operation(summary = "FindById Produtos")
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
@@ -63,76 +63,22 @@ public class ProdutoController {
 		obj = service.update(obj);
 		return ResponseEntity.noContent().build();
 	}
-	
+
 	@Operation(summary = "POST Produtos")
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<Void> insert(@Valid @RequestBody ProdutoDTO objDto){
+	public ResponseEntity<Void> insert(@Valid @RequestBody ProdutoDTO objDto) {
 		Produto obj = service.fromDTO(objDto);
-		obj =service.insert(obj);
-		
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
-				.path("/{id}").buildAndExpand(obj.getId()).toUri();
+		obj = service.insert(obj);
+
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
 		return ResponseEntity.created(uri).build();
 	}
-	
+
 	@Operation(summary = "DELETE Produtos")
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
 		service.delete(id);
 		return ResponseEntity.noContent().build();
 	}
-	
-	
-	
-	
-	
-	
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

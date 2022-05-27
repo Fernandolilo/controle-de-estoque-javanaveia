@@ -1,0 +1,12 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /sales-service
+spring:
+  application:
+    name: sales-service
+  jackson:
+  # para não serializar objetos nulos 
+    default-property-inclusion: NON_NULL
+    serialization: 
+      fail-on-empty-beans: false

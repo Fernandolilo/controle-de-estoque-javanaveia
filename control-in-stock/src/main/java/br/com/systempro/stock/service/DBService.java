@@ -29,18 +29,18 @@ public class DBService {
 		Categoria cat3 = new Categoria(null, "Eletrônicos");
 		
 		
-		Produto p1 = new Produto(null, "furadeira", 250.55, 10, cat1);
-		Produto p2 = new Produto(null, "maquita", 351.55, 10, cat1);
-		Produto p3 = new Produto(null, "arco de serra", 25.00, 10, cat1);
-		Produto p4 = new Produto(null, "martelo", 37.55, 10, cat1);
-		Produto p5 = new Produto(null, "impressora", 8000.55, 10, cat2);
-		Produto p6 = new Produto(null, "computador", 2000.99, 10, cat2);
-		Produto p7 = new Produto(null, "mesa para computador", 199.99, 10, cat2);
-		Produto p8 = new Produto(null, "roteador", 149.99, 10, cat2);
-		Produto p9 = new Produto(null, "fone de ouvido", 20.55, 10, cat3);
-		Produto p10 = new Produto(null, "lampada de mesa", 49.99, 10, cat3);
-		Produto p11 = new Produto(null, "calculadora cientifica", 79.99, 10, cat3);
-		Produto p12 = new Produto(null, "despertador", 25.55, 10, cat3);
+		Produto p1 = new Produto(null, "furadeira","Modial", 250.55, 10, cat1);
+		Produto p2 = new Produto(null, "maquita", "Maquita", 351.55, 10, cat1);
+		Produto p3 = new Produto(null, "arco de serra", "Star Rett", 25.00, 10, cat1);
+		Produto p4 = new Produto(null, "martelo", "ferrero", 37.55, 10, cat1);
+		Produto p5 = new Produto(null, "impressora","Hp", 8000.55, 10, cat2);
+		Produto p6 = new Produto(null, "computador", "Asus", 2000.99, 10, cat2);
+		Produto p7 = new Produto(null, "mesa para computador", "Decorations", 199.99, 10, cat2);
+		Produto p8 = new Produto(null, "roteador", "Dlink", 149.99, 10, cat2);
+		Produto p9 = new Produto(null, "fone de ouvido","Shinka", 20.55, 10, cat3);
+		Produto p10 = new Produto(null, "lampada de mesa","Lume",  49.99, 10, cat3);
+		Produto p11 = new Produto(null, "calculadora cientifica", "Hp", 79.99, 10, cat3);
+		Produto p12 = new Produto(null, "despertador", "MomBlack", 25.55, 10, cat3);
 		
 		cat1.getProdutos().addAll(Arrays.asList(p1, p2, p3, p4));
 		cat2.getProdutos().addAll(Arrays.asList(p5, p6, p7, p8));

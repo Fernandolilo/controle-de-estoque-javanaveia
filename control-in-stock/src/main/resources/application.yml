@@ -1,10 +1,21 @@
 server:
   port: 8081
   servlet:
-    context-path: /produto-server
+    context-path: /produto-service
 spring:
   application:
-    name: produto-server
+    name: produto-service
   profiles:
     active:
     - "test"
+  jackson:
+  # para não serializar objetos nulos 
+    default-property-inclusion: NON_NULL
+    serialization: 
+      fail-on-empty-beans: false
+    
+springdoc:
+  show-actuator: true
+  api-docs:
+    path: /v3/api-docs
+    

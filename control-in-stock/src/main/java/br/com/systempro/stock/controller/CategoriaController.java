@@ -18,11 +18,12 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import br.com.systempro.stock.domain.Categoria;
 import br.com.systempro.stock.domain.dto.CategoriaDTO;
 import br.com.systempro.stock.service.CategoriaService;
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 
 
-@Tag(name = "Categorias")
+@Tag(name = "Categorias endpoint")
 @RestController
 @RequestMapping("/categorias")
 public class CategoriaController {
@@ -34,6 +35,7 @@ public class CategoriaController {
 		this.service = service;
 	}
 
+	@Operation(summary =  "FIND a specific categories")
 	@RequestMapping(value = "/page", method = RequestMethod.GET)
 	public ResponseEntity<Page<CategoriaDTO>> findPage(@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "24") Integer linesPerPage,
@@ -47,12 +49,15 @@ public class CategoriaController {
 		return ResponseEntity.ok().body(listDTO);
 	}
 
+
+	@Operation(summary =  "FIND a specific categories by id")
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ResponseEntity<Categoria> findById(@PathVariable Long id) {
 		Categoria obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
 
+	@Operation(summary =  "PUT a specific categories by id")
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<Void> update(@Valid @RequestBody CategoriaDTO objDto, @PathVariable Long id) {
 		Categoria obj = service.fromDTO(objDto);
@@ -61,6 +66,8 @@ public class CategoriaController {
 		return ResponseEntity.noContent().build();
 	}
 	
+
+	@Operation(summary =  "POST a specific categories")
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<Void> insert(@Valid @RequestBody CategoriaDTO objDto){
 		Categoria obj = service.fromDTO(objDto);
@@ -71,7 +78,8 @@ public class CategoriaController {
 		return ResponseEntity.created(uri).build();
 	}
 	
-	
+
+	@Operation(summary =  "DELETE a specific categories")
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<Void> delete(@PathVariable Long id) {
 		service.delete(id);

@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="DataIntegrityViolation"/>
+		<item key="selection" value="name"/>
 		<list key="findhistory">
+			<item value="nome"/>
+			<item value="Produto"/>
+			<item value="Pedido"/>
 			<item value="ObjectNotFoundException"/>
 			<item value=" ObjectNotFoundException"/>
 			<item value="DataIntegrityViolationException"/>
@@ -17,11 +20,13 @@
 			<item value="@RequestMapping(value = &quot;/page&quot;, method = RequestMethod.GET)&#x0A;&#x09;public ResponseEntity&lt;Page&lt;CategoryDTO&gt;&gt; findPage(&#x0A;            @RequestParam(value = &quot;page&quot;, defaultValue = &quot;0&quot;) Integer page,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;linesPerPage&quot;, defaultValue = &quot;24&quot;) Integer linesPerPage,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;direction&quot;, defaultValue = &quot;ASC&quot;) String direction,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;orderBy&quot;, defaultValue = &quot;name&quot;) String orderBy) {&#x0A;&#x09;&#x09;// pega a lista de categorias&#x0A;&#x09;&#x09;Page&lt;Category&gt; list = service.findPage(page, linesPerPage, orderBy, direction);&#x0A;&#x09;&#x09;// converte a lista de categorias para um CategoryDTO&#x0A;&#x09;&#x09;Page&lt;CategoryDTO&gt; listDto = list.map(obj -&gt; new CategoryDTO(obj));&#x0A;&#x09;&#x09;// retorna apenas dados nocessários.&#x0A;&#x09;&#x09;return ResponseEntity.ok().body(listDto);&#x0A;&#x09;}"/>
 		</list>
 		<list key="replacehistory">
+			<item value="name"/>
+			<item value="Venda"/>
+			<item value="Produto"/>
 			<item value="DataIntegrityViolation"/>
 			<item value="DataIntegrityViolationException"/>
 			<item value="ObjectNotFoundException"/>
 			<item value=" ObjectNotFoundException"/>
-			<item value="Produto"/>
 			<item value="ps"/>
 			<item value="Categoria"/>
 		</list>
@@ -32,5 +37,9 @@
 		<item key="DIALOG_WIDTH" value="343"/>
 		<item key="DIALOG_HEIGHT" value="432"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="448"/>
+		<item key="DIALOG_Y_ORIGIN" value="227"/>
 	</section>
 </section>
