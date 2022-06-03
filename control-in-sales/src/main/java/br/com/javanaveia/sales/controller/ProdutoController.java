@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.javanaveia.sales.domain.Produto;
-import br.com.javanaveia.sales.response.ProdutoRespponse;
+import br.com.javanaveia.sales.response.ProdutoResponse;
 
 @RestController
 @RequestMapping(value = "produtos")
 public class ProdutoController {
 
 	@Autowired
-	private ProdutoRespponse response;
+	private ProdutoResponse response;
 	
 	@GetMapping(value= "/{id}")
 	public Produto getProdutos(@PathVariable("id") Long id) {
