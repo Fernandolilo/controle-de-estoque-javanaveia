@@ -37,7 +37,6 @@ public class Pedido implements Serializable {
 	}
 
 	public Pedido(Long id, LocalDateTime instante, Long idProduto) {
-		super();
 		this.id = id;
 		this.instante = instante;
 		this.idProduto = idProduto;

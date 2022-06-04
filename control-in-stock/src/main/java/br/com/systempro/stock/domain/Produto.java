@@ -1,6 +1,8 @@
 package br.com.systempro.stock.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.Entity;
@@ -8,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -27,6 +30,9 @@ public class Produto implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "categoria_id")
 	private Categoria categoria;
+
+	@ManyToMany(mappedBy = "produtos")
+	private List<Fornecedor> fornecedores = new ArrayList<>();
 
 	public Produto() {
 	}
@@ -92,6 +98,13 @@ public class Produto implements Serializable {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+
+	/**
+	 * @return the fornecedores
+	 */
+	public List<Fornecedor> getFornecedores() {
+		return fornecedores;
 	}
 
 	@Override
