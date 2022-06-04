@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,19 +32,22 @@ public class Produto implements Serializable {
 	@JoinColumn(name = "categoria_id")
 	private Categoria categoria;
 
-	@ManyToMany(mappedBy = "produtos")
-	private List<Fornecedor> fornecedores = new ArrayList<>();
+	@ManyToOne
+	@JoinColumn(name = "fornecedor_id")
+	private Fornecedor fornecedor;
 
 	public Produto() {
 	}
 
-	public Produto(Long id, String nome, String marca, Double preco, Integer quantidade, Categoria categoria) {
+	public Produto(Long id, String nome, String marca, Double preco, Integer quantidade, Categoria categoria,
+			Fornecedor fornecedor) {
 		this.id = id;
 		this.nome = nome;
 		this.marca = marca;
 		this.preco = preco;
 		this.quantidade = quantidade;
 		this.categoria = categoria;
+		this.fornecedor = fornecedor;
 	}
 
 	public Long getId() {
@@ -101,10 +105,17 @@ public class Produto implements Serializable {
 	}
 
 	/**
-	 * @return the fornecedores
+	 * @return the fornecedore
 	 */
-	public List<Fornecedor> getFornecedores() {
-		return fornecedores;
+	public Fornecedor getFornecedor() {
+		return fornecedor;
+	}
+
+	/**
+	 * @param fornecedore the fornecedore to set
+	 */
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
 	}
 
 	@Override

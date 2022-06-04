@@ -9,8 +9,10 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
+import br.com.systempro.stock.domain.Fornecedor;
 import br.com.systempro.stock.domain.Produto;
 import br.com.systempro.stock.domain.dto.ProdutoDTO;
+import br.com.systempro.stock.repositories.ForneceforRepository;
 import br.com.systempro.stock.repositories.ProdutoRepository;
 import br.com.systempro.stock.service.exceptions.ObjectNotFoundException;
 
@@ -18,10 +20,12 @@ import br.com.systempro.stock.service.exceptions.ObjectNotFoundException;
 public class ProdutoService {
 
 	private final ProdutoRepository repository;
+	private final ForneceforRepository forneceforRepository;
 
 	@Autowired
-	public ProdutoService(ProdutoRepository repository) {
+	public ProdutoService(ProdutoRepository repository, ForneceforRepository forneceforRepository) {
 		this.repository = repository;
+		this.forneceforRepository = forneceforRepository;
 	}
 
 	public Page<Produto> findPage(Integer page, Integer linesPerPage, String orderBy, String direction) {
@@ -32,10 +36,9 @@ public class ProdutoService {
 	public Produto findById(Long id) {
 		Optional<Produto> obj = repository.findById(id);
 		return obj.orElseThrow(
-				() -> new ObjectNotFoundException(
-						"Objeto não encontrado ID: " + ", Tipo: " + Produto.class.getName()));
+				() -> new ObjectNotFoundException("Objeto não encontrado ID: " + ", Tipo: " + Produto.class.getName()));
 	}
-	
+
 	public List<ProdutoDTO> findByName(String nome) {
 		List<ProdutoDTO> produtos = repository.findByNomeLike(nome);
 		return produtos;
@@ -52,13 +55,15 @@ public class ProdutoService {
 	}
 
 	public Produto fromDTO(ProdutoDTO objDto) {
-		return new Produto(objDto.getId(), objDto.getNome(),objDto.getMarca(), objDto.getPreco(), objDto.getQuantidade(),
-				objDto.getCategoria());
+		return new Produto(objDto.getId(), objDto.getNome(), objDto.getMarca(), objDto.getPreco(),
+				objDto.getQuantidade(), objDto.getCategoria(), objDto.getFornecedor());
+
 	}
 
 	public Produto insert(Produto obj) {
-		obj.setId(null);
-		return repository.save(obj);
+		Fornecedor fo = new Fornecedor();
+		obj.setId(null);		
+		return repository.save(obj);	
 	}
 
 	public void delete(Long id) {
@@ -66,4 +71,5 @@ public class ProdutoService {
 		repository.deleteById(id);
 	}
 
+	
 }

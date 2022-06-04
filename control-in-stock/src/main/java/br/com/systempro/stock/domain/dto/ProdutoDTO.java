@@ -1,8 +1,11 @@
 package br.com.systempro.stock.domain.dto;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import br.com.systempro.stock.domain.Categoria;
+import br.com.systempro.stock.domain.Fornecedor;
 import br.com.systempro.stock.domain.Produto;
 
 public class ProdutoDTO implements Serializable {
@@ -14,6 +17,7 @@ public class ProdutoDTO implements Serializable {
 	private Double preco;
 	private Integer quantidade;
 	private Categoria categoria;
+	private Fornecedor fornecedor;
 
 	public ProdutoDTO() {
 	}
@@ -25,6 +29,7 @@ public class ProdutoDTO implements Serializable {
 		preco = obj.getPreco();
 		quantidade = obj.getQuantidade();
 		categoria = obj.getCategoria();
+		fornecedor = obj.getFornecedor();
 	}
 
 	/**
@@ -109,6 +114,13 @@ public class ProdutoDTO implements Serializable {
 	 */
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+
+	/**
+	 * @return the fornecedor
+	 */
+	public Fornecedor getFornecedor() {
+		return fornecedor;
 	}
 
 	

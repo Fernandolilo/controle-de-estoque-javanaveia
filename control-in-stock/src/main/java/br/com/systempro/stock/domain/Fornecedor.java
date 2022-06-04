@@ -13,9 +13,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Email;
 
 import org.hibernate.validator.constraints.br.CNPJ;
@@ -36,12 +34,9 @@ public class Fornecedor implements Serializable {
 	@CNPJ
 	private String cnpj;
 	private String endereço;
-	
+
 	@JsonIgnore
-	@ManyToMany
-	@JoinTable(name = "PRODUTO_FORNECEDOR", 
-	joinColumns = @JoinColumn(name = "fornecedor_id"), 
-	inverseJoinColumns = @JoinColumn(name = "produto_id"))
+	@OneToMany(mappedBy = "fornecedor")
 	private List<Produto> produtos = new ArrayList<>();
 
 	@ElementCollection
@@ -51,7 +46,8 @@ public class Fornecedor implements Serializable {
 	public Fornecedor() {
 	}
 
-	public Fornecedor(Long id, String empresa, String nomeContato,@Email String email, @CNPJ String cnpj, String endereço) {
+	public Fornecedor(Long id, String empresa, String nomeContato, @Email String email, @CNPJ String cnpj,
+			String endereço) {
 		this.id = id;
 		this.empresa = empresa;
 		this.nomeContato = nomeContato;
@@ -158,6 +154,7 @@ public class Fornecedor implements Serializable {
 		return Telefones;
 	}
 
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(Telefones, cnpj, empresa, endereço, id, nomeContato, produtos);

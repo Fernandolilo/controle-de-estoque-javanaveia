@@ -6,14 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Preco"/>
+		<item key="selection" value="LocalDate"/>
 		<list key="findhistory">
+			<item value="Date"/>
+			<item value="Produto"/>
 			<item value="Proco"/>
 			<item value="proco"/>
 			<item value="Preço"/>
 			<item value="preço"/>
 			<item value="nome"/>
-			<item value="Produto"/>
 			<item value="Pedido"/>
 			<item value="ObjectNotFoundException"/>
 			<item value=" ObjectNotFoundException"/>
@@ -24,11 +25,13 @@
 			<item value="@RequestMapping(value = &quot;/page&quot;, method = RequestMethod.GET)&#x0A;&#x09;public ResponseEntity&lt;Page&lt;CategoryDTO&gt;&gt; findPage(&#x0A;            @RequestParam(value = &quot;page&quot;, defaultValue = &quot;0&quot;) Integer page,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;linesPerPage&quot;, defaultValue = &quot;24&quot;) Integer linesPerPage,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;direction&quot;, defaultValue = &quot;ASC&quot;) String direction,&#x0A;&#x09;&#x09;&#x09;@RequestParam(value = &quot;orderBy&quot;, defaultValue = &quot;name&quot;) String orderBy) {&#x0A;&#x09;&#x09;// pega a lista de categorias&#x0A;&#x09;&#x09;Page&lt;Category&gt; list = service.findPage(page, linesPerPage, orderBy, direction);&#x0A;&#x09;&#x09;// converte a lista de categorias para um CategoryDTO&#x0A;&#x09;&#x09;Page&lt;CategoryDTO&gt; listDto = list.map(obj -&gt; new CategoryDTO(obj));&#x0A;&#x09;&#x09;// retorna apenas dados nocessários.&#x0A;&#x09;&#x09;return ResponseEntity.ok().body(listDto);&#x0A;&#x09;}"/>
 		</list>
 		<list key="replacehistory">
+			<item value="LocalDate"/>
+			<item value="Pedido"/>
+			<item value="Produto"/>
 			<item value="Preco"/>
 			<item value="preco"/>
 			<item value="name"/>
 			<item value="Venda"/>
-			<item value="Produto"/>
 			<item value="DataIntegrityViolation"/>
 			<item value="DataIntegrityViolationException"/>
 			<item value="ObjectNotFoundException"/>
