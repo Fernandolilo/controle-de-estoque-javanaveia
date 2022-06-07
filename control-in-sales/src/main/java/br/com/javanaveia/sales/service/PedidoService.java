@@ -31,7 +31,6 @@ public class PedidoService {
 	public Pedido insert(Pedido obj) {
 		obj.setId(null);
 		obj.setInstante(LocalDateTime.now());
-		System.out.println("hora e data do systema****************: " + LocalDateTime.now());
 		obj.setIdProduto(obj.getIdProduto());
 		Produto prod =  response.getProduto(obj.getIdProduto());
 		obj = pedidoRepository.save(obj);
@@ -40,6 +39,7 @@ public class PedidoService {
 				ip.setIdProduto(prod.getId());
 				ip.setMarca(prod.getMarca());
 				ip.setNome(prod.getMarca());
+				ip.setDescricao(prod.getDescricao());
 				ip.setPreco(prod.getPreco());
 				ip.setQuantidade(ip.getQuantidade());
 				ip.setPedido(obj);

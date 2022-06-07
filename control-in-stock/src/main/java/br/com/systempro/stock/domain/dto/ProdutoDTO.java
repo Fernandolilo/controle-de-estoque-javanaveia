@@ -14,6 +14,7 @@ public class ProdutoDTO implements Serializable {
 	private Long id;
 	private String nome;
 	private String marca;
+	private String descricao;
 	private Double preco;
 	private Integer quantidade;
 	private Categoria categoria;
@@ -26,6 +27,7 @@ public class ProdutoDTO implements Serializable {
 		id = obj.getId();
 		nome = obj.getNome();
 		marca = obj.getMarca();
+		descricao = obj.getDescricao();
 		preco = obj.getPreco();
 		quantidade = obj.getQuantidade();
 		categoria = obj.getCategoria();
@@ -72,6 +74,20 @@ public class ProdutoDTO implements Serializable {
 	 */
 	public void setMarca(String marca) {
 		this.marca = marca;
+	}
+
+	/**
+	 * @return the descricao
+	 */
+	public String getDescricao() {
+		return descricao;
+	}
+
+	/**
+	 * @param descricao the descricao to set
+	 */
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	/**
@@ -123,5 +139,4 @@ public class ProdutoDTO implements Serializable {
 		return fornecedor;
 	}
 
-	
 }

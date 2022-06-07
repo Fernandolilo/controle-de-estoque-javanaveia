@@ -27,7 +27,7 @@ public class Fornecedor implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String empresa;
+	private String razaoSocial;
 	private String nomeContato;
 	@Email
 	private String email;
@@ -46,10 +46,10 @@ public class Fornecedor implements Serializable {
 	public Fornecedor() {
 	}
 
-	public Fornecedor(Long id, String empresa, String nomeContato, @Email String email, @CNPJ String cnpj,
+	public Fornecedor(Long id, String razaoSocial, String nomeContato, @Email String email, @CNPJ String cnpj,
 			String endereço) {
 		this.id = id;
-		this.empresa = empresa;
+		this.razaoSocial = razaoSocial;
 		this.nomeContato = nomeContato;
 		this.email = email;
 		this.cnpj = cnpj;
@@ -71,17 +71,17 @@ public class Fornecedor implements Serializable {
 	}
 
 	/**
-	 * @return the empresa
+	 * @return the razaoSocial
 	 */
-	public String getEmpresa() {
-		return empresa;
+	public String getRazaoSocial() {
+		return razaoSocial;
 	}
 
 	/**
-	 * @param empresa the empresa to set
+	 * @param razaoSocial the razaoSocial to set
 	 */
-	public void setEmpresa(String empresa) {
-		this.empresa = empresa;
+	public void setRazaoSocial(String razaoSocial) {
+		this.razaoSocial = razaoSocial;
 	}
 
 	/**
@@ -157,7 +157,7 @@ public class Fornecedor implements Serializable {
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(Telefones, cnpj, empresa, endereço, id, nomeContato, produtos);
+		return Objects.hash(Telefones, cnpj, razaoSocial, endereço, id, nomeContato, produtos);
 	}
 
 	@Override
@@ -170,7 +170,7 @@ public class Fornecedor implements Serializable {
 			return false;
 		Fornecedor other = (Fornecedor) obj;
 		return Objects.equals(Telefones, other.Telefones) && Objects.equals(cnpj, other.cnpj)
-				&& Objects.equals(empresa, other.empresa) && Objects.equals(endereço, other.endereço)
+				&& Objects.equals(razaoSocial, other.razaoSocial) && Objects.equals(endereço, other.endereço)
 				&& Objects.equals(id, other.id) && Objects.equals(nomeContato, other.nomeContato)
 				&& Objects.equals(produtos, other.produtos);
 	}

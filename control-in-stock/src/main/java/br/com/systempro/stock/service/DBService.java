@@ -42,18 +42,18 @@ public class DBService {
 		Fornecedor f3 = new Fornecedor(null, "Com de Eletronicos", "Fernando Silva", "fer@gmail.com", "90718545000120", "Rua serra1, N15, Bairro Vl Céu, São Paulo SP");
 		f1.getTelefones().addAll(Arrays.asList("11 123456789", "11 78974444", "11 9 12345678"));
 		
-		Produto p1 = new Produto(null, "furadeira","Modial", 250.55, 10, cat1, f1);
-		Produto p2 = new Produto(null, "maquita", "Maquita", 351.55, 10, cat1, f1);
-		Produto p3 = new Produto(null, "arco de serra", "Star Rett", 25.00, 10, cat1, f1);
-		Produto p4 = new Produto(null, "martelo", "ferrero", 37.55, 10, cat1, f1);
-		Produto p5 = new Produto(null, "impressora","Hp", 8000.55, 10, cat2, f2);
-		Produto p6 = new Produto(null, "computador", "Asus", 2000.99, 10, cat2, f2);
-		Produto p7 = new Produto(null, "mesa para computador", "Decorations", 199.99, 10, cat2, f2);
-		Produto p8 = new Produto(null, "roteador", "Dlink", 149.99, 10, cat2, f2);
-		Produto p9 = new Produto(null, "fone de ouvido","Shinka", 20.55, 10, cat3, f3);
-		Produto p10 = new Produto(null, "lampada de mesa","Lume",  49.99, 10, cat3, f3);
-		Produto p11 = new Produto(null, "calculadora cientifica", "Hp", 79.99, 10, cat3, f3);
-		Produto p12 = new Produto(null, "despertador", "MomBlack", 25.55, 10, cat3, f3);
+		Produto p1 = new Produto(null, "Furadeira","Mondial","127V de impacto", 250.55, 10, cat1, f1);
+		Produto p2 = new Produto(null, "Maquita", "Maquita", "220V 3000HP", 351.55, 10, cat1, f1);
+		Produto p3 = new Produto(null, "Arco de serra", "Star Rett","Serra de ferro revestido com tinta acrilica", 25.00, 10, cat1, f1);
+		Produto p4 = new Produto(null, "Martelo", "ferrero","Martelo universao com cabo de madeira 30cm", 37.55, 10, cat1, f1);
+		Produto p5 = new Produto(null, "Impressora","Hp","Impressora a laser", 8000.55, 10, cat2, f2);
+		Produto p6 = new Produto(null, "Computador", "Asus","computador com placa de video vega8, processador Rayzen 5 ", 2000.99, 10, cat2, f2);
+		Produto p7 = new Produto(null, "Mesa para Computador", "Decorations", "Mesa de mateira, 120cm de largura por 80 de altura, 3 gavetas",199.99, 10, cat2, f2);
+		Produto p8 = new Produto(null, "Roteador", "Dlink", "Roteador de 300M com 2 Antenas de 10Dbi", 149.99, 10, cat2, f2);
+		Produto p9 = new Produto(null, "fone de ouvido","Shinka", "Fone de ouvidos hard-set com leds, otimo para games", 20.55, 10, cat3, f3);
+		Produto p10 = new Produto(null, "Lampada de mesa","Lume", "lampada bocal E27 60W", 49.99, 10, cat3, f3);
+		Produto p11 = new Produto(null, "Calculadora cientifica", "Hp","Calculadora finaceira hp", 79.99, 10, cat3, f3);
+		Produto p12 = new Produto(null, "Despertador", "Black", "Despertador com calendario",25.55, 10, cat3, f3);
 		
 		
 		

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,10 +23,17 @@ public class Produto implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="id", nullable = false)
 	private Long id;
+	@Column(name="nome", length = 250, nullable = false)
 	private String nome;
+	@Column(name="marca", length = 50, nullable = false)
 	private String marca;
+	@Column(name="descricao", length = 350, nullable = false)
+	private String descricao;
+	@Column(name="preco", length = 10, nullable = false)
 	private Double preco;
+	@Column(name="quantidade", length = 20, nullable = false)
 	private Integer quantidade;
 
 	@ManyToOne
@@ -39,11 +47,12 @@ public class Produto implements Serializable {
 	public Produto() {
 	}
 
-	public Produto(Long id, String nome, String marca, Double preco, Integer quantidade, Categoria categoria,
-			Fornecedor fornecedor) {
+	public Produto(Long id, String nome, String marca, String descricao, Double preco, Integer quantidade,
+			Categoria categoria, Fornecedor fornecedor) {
 		this.id = id;
 		this.nome = nome;
 		this.marca = marca;
+		this.descricao = descricao;
 		this.preco = preco;
 		this.quantidade = quantidade;
 		this.categoria = categoria;
@@ -78,6 +87,20 @@ public class Produto implements Serializable {
 	 */
 	public void setMarca(String marca) {
 		this.marca = marca;
+	}
+
+	/**
+	 * @return the descricao
+	 */
+	public String getDescricao() {
+		return descricao;
+	}
+
+	/**
+	 * @param descricao the descricao to set
+	 */
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public Double getPreco() {
@@ -137,7 +160,9 @@ public class Produto implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Produto [id=" + id + ", nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + "]";
+		return "Produto [id=" + id + ", nome=" + nome + ", marca=" + marca + ", descricao=" + descricao + ", preco="
+				+ preco + ", quantidade=" + quantidade + ", categoria=" + categoria + ", fornecedor=" + fornecedor
+				+ "]";
 	}
 
 }

@@ -14,7 +14,7 @@ public class FornecedorDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
-	private String empresa;
+	private String razaoSocial;
 	private String nomeContato;
 	@Email
 	private String email;
@@ -29,7 +29,7 @@ public class FornecedorDTO implements Serializable {
 
 	public FornecedorDTO(Fornecedor obj) {
 		id = obj.getId();
-		empresa = obj.getEmpresa();
+		razaoSocial = obj.getRazaoSocial();
 		nomeContato = obj.getNomeContato();
 		email = obj.getEmail();
 		cnpj = obj.getCnpj();
@@ -52,17 +52,17 @@ public class FornecedorDTO implements Serializable {
 	}
 
 	/**
-	 * @return the empresa
+	 * @return the razaoSocial
 	 */
-	public String getEmpresa() {
-		return empresa;
+	public String getRazaoSocial() {
+		return razaoSocial;
 	}
 
 	/**
-	 * @param empresa the empresa to set
+	 * @param razaoSocial the razaoSocial to set
 	 */
-	public void setEmpresa(String empresa) {
-		this.empresa = empresa;
+	public void setRazaoSocial(String razaoSocial) {
+		this.razaoSocial = razaoSocial;
 	}
 
 	/**

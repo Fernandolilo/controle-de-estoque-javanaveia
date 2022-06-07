@@ -17,33 +17,34 @@ import javax.persistence.ManyToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class ItemPedido implements Serializable{
+public class ItemPedido implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Long idProduto;
 	private String nome;
 	private String marca;
+	private String descricao;
 	private Double preco;
 	private Integer quantidade;
-	
+
 	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "pedido_id")
 	private Pedido pedido;
-	
+
 	public ItemPedido() {
 	}
 
-	public ItemPedido(Long id, Long idProduto, String nome, String marca, Double preco,
-			Integer quantidade,	Pedido pedido) {
-	
+	public ItemPedido(Long id, Long idProduto, String nome, String marca, String descricao, Double preco,
+			Integer quantidade, Pedido pedido) {
 		this.id = id;
 		this.idProduto = idProduto;
 		this.nome = nome;
 		this.marca = marca;
+		this.descricao = descricao;
 		this.preco = preco;
 		this.quantidade = quantidade;
 		this.pedido = pedido;
@@ -99,6 +100,20 @@ public class ItemPedido implements Serializable{
 	}
 
 	/**
+	 * @return the descricao
+	 */
+	public String getDescricao() {
+		return descricao;
+	}
+
+	/**
+	 * @param descricao the descricao to set
+	 */
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	/**
 	 * @param marca the marca to set
 	 */
 	public void setMarca(String marca) {
@@ -146,21 +161,20 @@ public class ItemPedido implements Serializable{
 	public void setPedido(Pedido pedido) {
 		this.pedido = pedido;
 	}
-	
-	/*public String getValorTotal() {
-		double valor;
-		valor = preco * quantidade;
-		return new DecimalFormat("#,##0.00").format(valor);
-		
-	}*/
-	
+
+	/*
+	 * public String getValorTotal() { double valor; valor = preco * quantidade;
+	 * return new DecimalFormat("#,##0.00").format(valor);
+	 * 
+	 * }
+	 */
+
 	public Double getValorTotal() {
 		double valor;
 		valor = preco * quantidade;
 		return valor;
-		
-	}
 
+	}
 
 	@Override
 	public int hashCode() {
@@ -181,7 +195,7 @@ public class ItemPedido implements Serializable{
 				&& Objects.equals(pedido, other.pedido) && Objects.equals(preco, other.preco)
 				&& Objects.equals(quantidade, other.quantidade);
 	}
-	
+
 	@Override
 	public String toString() {
 		NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
@@ -193,5 +207,4 @@ public class ItemPedido implements Serializable{
 		return builder.toString();
 	}
 
-	
 }

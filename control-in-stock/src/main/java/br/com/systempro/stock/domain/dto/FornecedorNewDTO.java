@@ -10,7 +10,7 @@ public class FornecedorNewDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
-	private String empresa;
+	private String razaoSocial;
 	private String nomeContato;
 	@Email
 	private String email;

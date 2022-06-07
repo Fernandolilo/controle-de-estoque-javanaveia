@@ -3,6 +3,7 @@ package br.com.javanaveia.sales.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Column;
 
 public class Produto implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -10,16 +11,18 @@ public class Produto implements Serializable {
 	private Long id;
 	private String nome;
 	private String marca;
+	private String descricao;
 	private Double preco;
 	private Integer quantidade;
 
 	public Produto() {
 	}
 
-	public Produto(Long id, String nome, String marca, Double preco, Integer quantidade) {
+	public Produto(Long id, String nome, String marca, String descricao, Double preco, Integer quantidade) {
 		this.id = id;
 		this.nome = nome;
 		this.marca = marca;
+		this.descricao = descricao;
 		this.preco = preco;
 		this.quantidade = quantidade;
 	}
@@ -52,6 +55,20 @@ public class Produto implements Serializable {
 	 */
 	public void setMarca(String marca) {
 		this.marca = marca;
+	}
+
+	/**
+	 * @return the descricao
+	 */
+	public String getDescricao() {
+		return descricao;
+	}
+
+	/**
+	 * @param descricao the descricao to set
+	 */
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public Double getPreco() {
