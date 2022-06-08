@@ -16,25 +16,33 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Cliente implements Serializable{
+public class Cliente implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
 	private String email;
 	private String password;
-	private String CpfOuCnpj;
-	
+	private String cpfOuCnpj;
+
 	@OneToMany(mappedBy = "cliente")
 	private List<Endereco> enderecos = new ArrayList<>();
-	
+
 	@ElementCollection
 	@CollectionTable(name = "telefone_cliete")
 	private Set<String> Telefones = new HashSet<>();
-	
+
 	public Cliente() {
+	}
+
+	public Cliente(Long id, String nome, String email, String password, String cpfOuCnpj) {
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.password = password;
+		this.cpfOuCnpj = cpfOuCnpj;
 	}
 
 	/**
@@ -97,14 +105,14 @@ public class Cliente implements Serializable{
 	 * @return the cpfOuCnpj
 	 */
 	public String getCpfOuCnpj() {
-		return CpfOuCnpj;
+		return cpfOuCnpj;
 	}
 
 	/**
 	 * @param cpfOuCnpj the cpfOuCnpj to set
 	 */
 	public void setCpfOuCnpj(String cpfOuCnpj) {
-		CpfOuCnpj = cpfOuCnpj;
+		cpfOuCnpj = cpfOuCnpj;
 	}
 
 	/**
@@ -130,7 +138,7 @@ public class Cliente implements Serializable{
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(CpfOuCnpj, Telefones, email, enderecos, id, nome, password);
+		return Objects.hash(cpfOuCnpj, Telefones, email, enderecos, id, nome, password);
 	}
 
 	@Override
@@ -142,12 +150,10 @@ public class Cliente implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Cliente other = (Cliente) obj;
-		return Objects.equals(CpfOuCnpj, other.CpfOuCnpj) && Objects.equals(Telefones, other.Telefones)
+		return Objects.equals(cpfOuCnpj, other.cpfOuCnpj) && Objects.equals(Telefones, other.Telefones)
 				&& Objects.equals(email, other.email) && Objects.equals(enderecos, other.enderecos)
 				&& Objects.equals(id, other.id) && Objects.equals(nome, other.nome)
 				&& Objects.equals(password, other.password);
 	}
-	
-	
 
 }

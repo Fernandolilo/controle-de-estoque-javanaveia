@@ -1,0 +1,10 @@
+spring:
+  datasource:    
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+  jpa:
+    show-sql: true
+    ddl-auto: update
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect 
