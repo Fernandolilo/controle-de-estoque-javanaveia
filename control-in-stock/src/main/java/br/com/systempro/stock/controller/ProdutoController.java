@@ -36,7 +36,7 @@ public class ProdutoController {
 	}
 
 	@Operation(summary = "FindPage Produtos")
-	@RequestMapping(value = "/page", method = RequestMethod.GET)
+	@RequestMapping(value = "/page",produces = { "application/json", "application/xml", "application/yaml" }, method = RequestMethod.GET)
 	public ResponseEntity<Page<ProdutoDTO>> findPage(@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "24") Integer linesPerPage,
 			@RequestParam(value = "direction", defaultValue = "ASC") String direction,
