@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
 @Entity
 public class Endereco implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -22,16 +23,16 @@ public class Endereco implements Serializable {
 	private String cep;
 	private String cidade;
 	private String estado;
-	
-	@ManyToOne
-	@JoinColumn(name = "cliente_id")
-	private Cliente cliente;
 
+	@ManyToOne
+	@JoinColumn(name="cliente_id")
+	private Cliente cliente;
+	
 	public Endereco() {
 	}
 
-	public Endereco(Long id, String logradouro, Integer numero, String complemento, String cep, 
-			String cidade, String estado, Cliente cliente) {
+	public Endereco(Long id, String logradouro, Integer numero, String complemento, String cep, String cidade,
+			String estado, Cliente cliente) {
 		this.id = id;
 		this.logradouro = logradouro;
 		this.numero = numero;
@@ -141,22 +142,19 @@ public class Endereco implements Serializable {
 	}
 
 	/**
-	 * @return the cliente
+	 * @return the clientes
 	 */
 	public Cliente getCliente() {
 		return cliente;
 	}
-
-	/**
-	 * @param cliente the cliente to set
-	 */
+	
 	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
+		this.cliente= cliente;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(cep, cidade, complemento, estado, id, logradouro, numero);
+		return Objects.hash(cep, cidade, cliente, complemento, estado, id, logradouro, numero);
 	}
 
 	@Override
@@ -169,9 +167,9 @@ public class Endereco implements Serializable {
 			return false;
 		Endereco other = (Endereco) obj;
 		return Objects.equals(cep, other.cep) && Objects.equals(cidade, other.cidade)
-				&& Objects.equals(complemento, other.complemento) && Objects.equals(estado, other.estado)
-				&& Objects.equals(id, other.id) && Objects.equals(logradouro, other.logradouro)
-				&& Objects.equals(numero, other.numero);
+				&& Objects.equals(cliente, other.cliente) && Objects.equals(complemento, other.complemento)
+				&& Objects.equals(estado, other.estado) && Objects.equals(id, other.id)
+				&& Objects.equals(logradouro, other.logradouro) && Objects.equals(numero, other.numero);
 	}
 
 }

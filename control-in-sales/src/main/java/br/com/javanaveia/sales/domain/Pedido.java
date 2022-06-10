@@ -5,7 +5,6 @@ import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
@@ -14,9 +13,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Pedido implements Serializable {
@@ -25,7 +27,7 @@ public class Pedido implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@JsonFormat(pattern = "dd/MM/yyyy HH:ss:mm")
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
 	private LocalDateTime instante;
 
 	private Long idProduto;
@@ -40,6 +42,7 @@ public class Pedido implements Serializable {
 		this.id = id;
 		this.instante = instante;
 		this.idProduto = idProduto;
+
 	}
 
 	/**
@@ -59,7 +62,7 @@ public class Pedido implements Serializable {
 	/**
 	 * @return the instante
 	 */
-	
+
 	public LocalDateTime getInstante() {
 		return instante;
 	}
@@ -68,7 +71,7 @@ public class Pedido implements Serializable {
 	 * @param instante the instante to set
 	 */
 	public void setInstante(LocalDateTime instante) {
-		this.instante  = instante;
+		this.instante = instante;
 	}
 
 	/**
@@ -116,7 +119,7 @@ public class Pedido implements Serializable {
 		return Objects.equals(id, other.id) && Objects.equals(idProduto, other.idProduto)
 				&& Objects.equals(instante, other.instante) && Objects.equals(itens, other.itens);
 	}
-	
+
 	@Override
 	public String toString() {
 		NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
@@ -125,12 +128,12 @@ public class Pedido implements Serializable {
 		builder.append("Numero de Pedido: ");
 		builder.append(getId());
 		builder.append(", Instante: ");
-		builder.append(sdf.format(getInstante()));		
+		builder.append(sdf.format(getInstante()));
 		builder.append("\nDetalhes: \n");
-		for(ItemPedido ip: getItens()) {
+		for (ItemPedido ip : getItens()) {
 			builder.append(ip.toString());
 		}
 		return builder.toString();
-	
+
 	}
 }

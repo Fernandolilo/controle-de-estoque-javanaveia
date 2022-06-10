@@ -20,12 +20,12 @@ import br.com.javanaveia.sales.domain.Produto;
  * }
  */
 
-
 @FeignClient(name = "produtos", url = "localhost:8000/produto-service/produtos/")
 public interface ProdutoResponse {
 
 	@GetMapping(value = "/{id}")
 	public Produto getProduto(@PathVariable("id") Long id);
+
 	
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public List<Produto> findByName(@RequestParam(name = "nome", required = true) String nome);

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.CollectionTable;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
@@ -14,6 +15,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Cliente implements Serializable {
@@ -27,8 +30,10 @@ public class Cliente implements Serializable {
 	private String password;
 	private String cpfOuCnpj;
 
-	@OneToMany(mappedBy = "cliente")
+	@JsonIgnore
+	@OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
 	private List<Endereco> enderecos = new ArrayList<>();
+
 
 	@ElementCollection
 	@CollectionTable(name = "telefone_cliete")
@@ -112,14 +117,7 @@ public class Cliente implements Serializable {
 	 * @param cpfOuCnpj the cpfOuCnpj to set
 	 */
 	public void setCpfOuCnpj(String cpfOuCnpj) {
-		cpfOuCnpj = cpfOuCnpj;
-	}
-
-	/**
-	 * @return the serialversionuid
-	 */
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+		this.cpfOuCnpj = cpfOuCnpj;
 	}
 
 	/**
@@ -138,7 +136,7 @@ public class Cliente implements Serializable {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(cpfOuCnpj, Telefones, email, enderecos, id, nome, password);
+		return Objects.hash(Telefones, cpfOuCnpj, email, enderecos, id, nome, password);
 	}
 
 	@Override
@@ -150,7 +148,7 @@ public class Cliente implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Cliente other = (Cliente) obj;
-		return Objects.equals(cpfOuCnpj, other.cpfOuCnpj) && Objects.equals(Telefones, other.Telefones)
+		return Objects.equals(Telefones, other.Telefones) && Objects.equals(cpfOuCnpj, other.cpfOuCnpj)
 				&& Objects.equals(email, other.email) && Objects.equals(enderecos, other.enderecos)
 				&& Objects.equals(id, other.id) && Objects.equals(nome, other.nome)
 				&& Objects.equals(password, other.password);

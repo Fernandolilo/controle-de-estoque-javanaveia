@@ -9,26 +9,26 @@ import java.util.Set;
 import br.com.javanaveia.client.domain.Cliente;
 import br.com.javanaveia.client.domain.Endereco;
 
-public class ClienteDTO implements Serializable{
+public class ClienteDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private Long id;
 	private String nome;
 	private String email;
-	private String cpfOuCnpj;	
-	private List<Endereco> enderecos = new ArrayList<>();	
+	private String cpfOuCnpj;
+	private List<Endereco> enderecos = new ArrayList<>();
 	private Set<String> telefones = new HashSet<>();
-	
+
 	public ClienteDTO() {
 	}
-	
+
 	public ClienteDTO(Cliente obj) {
 		id = obj.getId();
 		nome = obj.getNome();
 		email = obj.getEmail();
 		cpfOuCnpj = obj.getCpfOuCnpj();
 		enderecos = obj.getEnderecos();
-		telefones = obj.getTelefones();		
+		telefones = obj.getTelefones();
 	}
 
 	/**
@@ -95,13 +95,6 @@ public class ClienteDTO implements Serializable{
 	}
 
 	/**
-	 * @param enderecos the enderecos to set
-	 */
-	public void setEnderecos(List<Endereco> enderecos) {
-		this.enderecos = enderecos;
-	}
-
-	/**
 	 * @return the telefones
 	 */
 	public Set<String> getTelefones() {
@@ -114,5 +107,5 @@ public class ClienteDTO implements Serializable{
 	public void setTelefones(Set<String> telefones) {
 		this.telefones = telefones;
 	}
-	
+
 }

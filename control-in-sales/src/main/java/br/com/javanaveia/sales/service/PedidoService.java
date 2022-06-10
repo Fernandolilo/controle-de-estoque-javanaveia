@@ -4,6 +4,9 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
 import br.com.javanaveia.sales.domain.ItemPedido;
@@ -11,6 +14,7 @@ import br.com.javanaveia.sales.domain.Pedido;
 import br.com.javanaveia.sales.domain.Produto;
 import br.com.javanaveia.sales.repositoryes.ItemPedidoRepository;
 import br.com.javanaveia.sales.repositoryes.PedidoRepository;
+import br.com.javanaveia.sales.response.ClienteProxi;
 import br.com.javanaveia.sales.response.ProdutoResponse;
 
 @Service
@@ -20,9 +24,10 @@ public class PedidoService {
 	private final PedidoRepository pedidoRepository;
 	private final ProdutoResponse response;
 
+
 	@Autowired
 	public PedidoService(ItemPedidoRepository itemPedidoRepository, PedidoRepository pedidoRepository,
-			ProdutoResponse response) {
+			ProdutoResponse response, ClienteProxi proxi) {
 		this.itemPedidoRepository = itemPedidoRepository;
 		this.pedidoRepository = pedidoRepository;
 		this.response = response;
@@ -32,10 +37,10 @@ public class PedidoService {
 		obj.setId(null);
 		obj.setInstante(LocalDateTime.now());
 		obj.setIdProduto(obj.getIdProduto());
-		Produto prod =  response.getProduto(obj.getIdProduto());
+		Produto prod = response.getProduto(obj.getIdProduto());
 		obj = pedidoRepository.save(obj);
 		for (ItemPedido ip : obj.getItens()) {
-			if(ip.getId() == null) {
+			if (ip.getId() == null) {
 				ip.setIdProduto(prod.getId());
 				ip.setMarca(prod.getMarca());
 				ip.setNome(prod.getMarca());
@@ -43,15 +48,21 @@ public class PedidoService {
 				ip.setPreco(prod.getPreco());
 				ip.setQuantidade(ip.getQuantidade());
 				ip.setPedido(obj);
-			}			
+			}
 		}
+
 		itemPedidoRepository.saveAll(obj.getItens());
 		return obj;
 	}
-	
+
 	public Optional<Pedido> findById(Long id) {
 		Optional<Pedido> obj = pedidoRepository.findById(id);
 		return obj;
 	}
 	
+	public Page<Pedido> findPage(Integer page, Integer linesPerPage, String orderBy, String direction) {
+		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
+		return pedidoRepository.findAll(pageRequest);
+	}
+
 }

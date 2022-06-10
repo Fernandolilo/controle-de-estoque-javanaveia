@@ -32,6 +32,7 @@ public class SalesService {
 		obj.setPreco(pp.getPreco() * 1.7);
 		obj.setQuantidade(obj.getQuantidade());
 		obj = repository.save(obj);
+		
 
 		return obj;
 	}

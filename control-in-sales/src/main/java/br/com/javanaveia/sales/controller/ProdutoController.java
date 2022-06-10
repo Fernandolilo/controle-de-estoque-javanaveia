@@ -14,7 +14,7 @@ import br.com.javanaveia.sales.domain.Produto;
 import br.com.javanaveia.sales.response.ProdutoResponse;
 
 @RestController
-@RequestMapping(value = "produtos")
+@RequestMapping(value = "/produtos")
 public class ProdutoController {
 
 	@Autowired
