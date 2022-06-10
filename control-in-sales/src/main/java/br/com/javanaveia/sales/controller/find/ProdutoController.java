@@ -1,4 +1,4 @@
-package br.com.javanaveia.sales.controller;
+package br.com.javanaveia.sales.controller.find;
 
 import java.util.List;
 

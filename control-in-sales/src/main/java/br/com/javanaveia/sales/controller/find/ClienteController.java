@@ -1,4 +1,4 @@
-package br.com.javanaveia.sales.controller;
+package br.com.javanaveia.sales.controller.find;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,12 +15,10 @@ public class ClienteController {
 
 	@Autowired
 	private ClienteProxi response;
-	
-	@GetMapping(value= "/{id}")
+
+	@GetMapping(value = "/{id}")
 	public Cliente getClientes(@PathVariable("id") Long id) {
-		return response.getCliente(id);	 
+		return response.getCliente(id);
 	}
-	
-	
 
 }
