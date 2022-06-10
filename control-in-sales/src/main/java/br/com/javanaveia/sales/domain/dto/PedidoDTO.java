@@ -5,8 +5,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.OneToMany;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import br.com.javanaveia.sales.domain.ItemPedido;
