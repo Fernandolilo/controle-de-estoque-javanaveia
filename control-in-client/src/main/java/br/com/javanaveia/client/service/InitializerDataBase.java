@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.javanaveia.client.domain.Cliente;
 import br.com.javanaveia.client.domain.Endereco;
+import br.com.javanaveia.client.enums.TipoClient;
 import br.com.javanaveia.client.repositories.ClienteRepository;
 import br.com.javanaveia.client.repositories.EnderecoRepository;
 
@@ -24,7 +25,7 @@ public class InitializerDataBase {
 
 	public void initialaizerDataBaseTest() {
 
-		Cliente cli1 = new Cliente(null, "Fernando", "fernando@gmail", "1234", "1234");
+		Cliente cli1 = new Cliente(null, "Fernando", "fernando@gmail", "1234", "1234", TipoClient.PESSOAFISICA);
 		cli1.getTelefones().addAll(Arrays.asList("11 1234-1234", "11 9 7894-7894"));
 
 		Endereco end1 = new Endereco(null, "Rua xpto", 56, "", "121345-000", "São Paulo", "SP", cli1);

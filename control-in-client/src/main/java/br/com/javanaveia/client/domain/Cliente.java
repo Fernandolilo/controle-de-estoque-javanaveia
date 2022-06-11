@@ -11,12 +11,15 @@ import javax.persistence.CascadeType;
 import javax.persistence.CollectionTable;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import br.com.javanaveia.client.enums.TipoClient;
 
 @Entity
 public class Cliente implements Serializable {
@@ -29,11 +32,10 @@ public class Cliente implements Serializable {
 	private String email;
 	private String password;
 	private String cpfOuCnpj;
+	private Integer tipo;
 
-	@JsonIgnore
-	@OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
 	private List<Endereco> enderecos = new ArrayList<>();
-
 
 	@ElementCollection
 	@CollectionTable(name = "telefone_cliete")
@@ -42,12 +44,13 @@ public class Cliente implements Serializable {
 	public Cliente() {
 	}
 
-	public Cliente(Long id, String nome, String email, String password, String cpfOuCnpj) {
+	public Cliente(Long id, String nome, String email, String password, String cpfOuCnpj, TipoClient tipoCliente) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.password = password;
 		this.cpfOuCnpj = cpfOuCnpj;
+		this.tipo = (tipoCliente == null) ? null : tipoCliente.getCod();
 	}
 
 	/**
@@ -132,6 +135,14 @@ public class Cliente implements Serializable {
 	 */
 	public Set<String> getTelefones() {
 		return Telefones;
+	}
+
+	public TipoClient getTipo() {
+		return TipoClient.toEnum(tipo);
+	}
+
+	public void setTipo(TipoClient tipo) {
+		this.tipo = tipo.getCod();
 	}
 
 	@Override

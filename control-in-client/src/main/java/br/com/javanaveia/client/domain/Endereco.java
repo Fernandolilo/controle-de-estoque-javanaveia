@@ -3,12 +3,18 @@ package br.com.javanaveia.client.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import net.bytebuddy.asm.Advice.ArgumentHandler.Factory;
 
 @Entity
 public class Endereco implements Serializable {
@@ -24,7 +30,8 @@ public class Endereco implements Serializable {
 	private String cidade;
 	private String estado;
 
-	@ManyToOne
+	@JsonIgnore
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="cliente_id")
 	private Cliente cliente;
 	
