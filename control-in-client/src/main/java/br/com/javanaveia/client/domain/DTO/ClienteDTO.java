@@ -8,6 +8,7 @@ import java.util.Set;
 
 import br.com.javanaveia.client.domain.Cliente;
 import br.com.javanaveia.client.domain.Endereco;
+import br.com.javanaveia.client.enums.Perfil;
 
 public class ClienteDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -18,6 +19,7 @@ public class ClienteDTO implements Serializable {
 	private String cpfOuCnpj;
 	private List<Endereco> enderecos = new ArrayList<>();
 	private Set<String> telefones = new HashSet<>();
+	private Perfil perfil;
 
 	public ClienteDTO() {
 	}
@@ -29,6 +31,7 @@ public class ClienteDTO implements Serializable {
 		cpfOuCnpj = obj.getCpfOuCnpj();
 		enderecos = obj.getEnderecos();
 		telefones = obj.getTelefones();
+		perfil = obj.getPerfil();
 	}
 
 	/**
@@ -106,6 +109,20 @@ public class ClienteDTO implements Serializable {
 	 */
 	public void setTelefones(Set<String> telefones) {
 		this.telefones = telefones;
+	}
+
+	/**
+	 * @return the perfil
+	 */
+	public Perfil getPerfil() {
+		return perfil;
+	}
+
+	/**
+	 * @param perfil the perfil to set
+	 */
+	public void setPerfil(Perfil perfil) {
+		this.perfil = perfil;
 	}
 
 }

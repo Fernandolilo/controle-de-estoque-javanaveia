@@ -19,6 +19,7 @@ import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import br.com.javanaveia.client.enums.Perfil;
 import br.com.javanaveia.client.enums.TipoClient;
 
 @Entity
@@ -33,6 +34,7 @@ public class Cliente implements Serializable {
 	private String password;
 	private String cpfOuCnpj;
 	private Integer tipo;
+	private Integer perfil;
 
 	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
 	private List<Endereco> enderecos = new ArrayList<>();
@@ -44,13 +46,15 @@ public class Cliente implements Serializable {
 	public Cliente() {
 	}
 
-	public Cliente(Long id, String nome, String email, String password, String cpfOuCnpj, TipoClient tipoCliente) {
+	public Cliente(Long id, String nome, String email, String password, String cpfOuCnpj, TipoClient tipoCliente,
+			Perfil perfil) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.password = password;
 		this.cpfOuCnpj = cpfOuCnpj;
 		this.tipo = (tipoCliente == null) ? null : tipoCliente.getCod();
+		this.perfil = (perfil == null) ? null : perfil.getCod();
 	}
 
 	/**
@@ -143,6 +147,15 @@ public class Cliente implements Serializable {
 
 	public void setTipo(TipoClient tipo) {
 		this.tipo = tipo.getCod();
+	}
+	
+	public Perfil getPerfil() {
+		return Perfil.toEnum(perfil);
+	}
+
+
+	public void Perfil(Perfil perfil) {
+		this.perfil = perfil.getCod();
 	}
 
 	@Override

@@ -2,15 +2,16 @@ package br.com.javanaveia.client.domain.DTO;
 
 import java.io.Serializable;
 
-public class ClientNewDTO implements Serializable{
+public class ClientNewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private Long id;
 	private String nome;
 	private String email;
 	private String password;
 	private String cpfOuCnpj;
 	private Integer tipo;
+	private Integer perfil;
 	private String telefone1;
 	private String telefone2;
 	private String telefone;
@@ -107,6 +108,20 @@ public class ClientNewDTO implements Serializable{
 	 */
 	public void setTipo(Integer tipo) {
 		this.tipo = tipo;
+	}
+
+	/**
+	 * @return the perfil
+	 */
+	public Integer getPerfil() {
+		return perfil;
+	}
+
+	/**
+	 * @param perfil the perfil to set
+	 */
+	public void setPerfil(Integer perfil) {
+		this.perfil = perfil;
 	}
 
 	/**

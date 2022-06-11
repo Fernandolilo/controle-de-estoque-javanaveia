@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import br.com.javanaveia.client.domain.Cliente;
 import br.com.javanaveia.client.domain.Endereco;
 import br.com.javanaveia.client.domain.DTO.ClientNewDTO;
+import br.com.javanaveia.client.enums.Perfil;
 import br.com.javanaveia.client.enums.TipoClient;
 import br.com.javanaveia.client.repositories.ClienteRepository;
 import br.com.javanaveia.client.service.exceptions.ObjectNotFoundException;
@@ -35,7 +36,7 @@ public class ClienteService {
 
 	public Cliente fromDto(ClientNewDTO obj) {
 		Cliente cli = new Cliente(null, obj.getNome(), obj.getEmail(), obj.getPassword(), obj.getCpfOuCnpj(),
-				TipoClient.toEnum(obj.getTipo()));
+				TipoClient.toEnum(obj.getTipo()), Perfil.toEnum(obj.getPerfil()));
 		Endereco end = new Endereco(null, obj.getLogradouro(), obj.getNumero(), obj.getComplemento(), obj.getCep(),
 				obj.getCidade(), obj.getEstado(), cli);
 		cli.getEnderecos().add(end);	
