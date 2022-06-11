@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="razaoSocial"/>
+		<item key="selection" value="ItemPedidoDTO"/>
 		<list key="findhistory">
+			<item value="ProdutoDTO"/>
 			<item value="empresa"/>
 			<item value="Empresa"/>
 			<item value="Date"/>
@@ -22,9 +23,9 @@
 			<item value=" ObjectNotFoundException"/>
 			<item value="DataIntegrityViolationException"/>
 			<item value="Categoria"/>
-			<item value="stmt"/>
 		</list>
 		<list key="replacehistory">
+			<item value="ItemPedidoDTO"/>
 			<item value="razaoSocial"/>
 			<item value="RazaoSocial"/>
 			<item value="LocalDate"/>
@@ -39,7 +40,6 @@
 			<item value="ObjectNotFoundException"/>
 			<item value=" ObjectNotFoundException"/>
 			<item value="ps"/>
-			<item value="Categoria"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

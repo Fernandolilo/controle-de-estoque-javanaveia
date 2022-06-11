@@ -16,4 +16,5 @@ public interface ItemPedidoRepository extends JpaRepository<ItemPedido, Long> {
 
 	@Query("SELECT p FROM ItemPedido p WHERE p.nome LIKE %:nome%")
 	List<ItemPedidoDTO>findByNomeLike(@Param("nome") String nome);
+	
 }

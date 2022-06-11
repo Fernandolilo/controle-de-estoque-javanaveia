@@ -154,7 +154,6 @@ INDEX VERSION 1.131+/home/fernando/temp-sts/controle-estoque/.metadata/.plugins/
 1059202913.index
 389641731.index
 1312726738.index
-2318834207.index
 851275856.index
 3980154736.index
 925993891.index
