@@ -1,23 +1,51 @@
 package br.com.javanaveia.sales.domain;
 
 import java.io.Serializable;
+import java.util.Objects;
 
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
 public class Cliente implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	private Long idCliente;
 	private String nome;
 	private String email;
 	private String cpfOuCnpj;
 
+	/*
+	 * @OneToMany(mappedBy = "cliente") private List<Pedido> pedidos = new
+	 * ArrayList<>();
+	 */
+
+	@JsonIgnore
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "pedido_id")
+	private Pedido pedido;
+	
+
 	public Cliente() {
 	}
 
-	public Cliente(Long id, String nome, String email, String cpfOuCnpj) {
+	public Cliente(Long id, Long idCliente, String nome, String email, String cpfOuCnpj, Pedido pedido) {
 		this.id = id;
+		this.idCliente = idCliente;
 		this.nome = nome;
 		this.email = email;
 		this.cpfOuCnpj = cpfOuCnpj;
+		this.pedido = pedido;
 	}
 
 	/**
@@ -32,6 +60,20 @@ public class Cliente implements Serializable {
 	 */
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	/**
+	 * @return the idCliente
+	 */
+	public Long getIdCliente() {
+		return idCliente;
+	}
+
+	/**
+	 * @param idCliente the idCliente to set
+	 */
+	public void setIdCliente(Long idCliente) {
+		this.idCliente = idCliente;
 	}
 
 	/**
@@ -74,6 +116,45 @@ public class Cliente implements Serializable {
 	 */
 	public void setCpfOuCnpj(String cpfOuCnpj) {
 		this.cpfOuCnpj = cpfOuCnpj;
+	}
+
+	/**
+	 * @return the pedidos
+	 */
+	public Pedido getPedidos() {
+		return pedido;
+	}
+
+	/**
+	 * @return the pedido
+	 */
+	public Pedido getPedido() {
+		return pedido;
+	}
+
+	/**
+	 * @param pedido the pedido to set
+	 */
+	public void setPedido(Pedido pedido) {
+		this.pedido = pedido;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(cpfOuCnpj, email, id, nome);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return Objects.equals(cpfOuCnpj, other.cpfOuCnpj) && Objects.equals(email, other.email)
+				&& Objects.equals(id, other.id) && Objects.equals(nome, other.nome);
 	}
 
 }

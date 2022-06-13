@@ -15,6 +15,7 @@ public class ItemPedidoDTO implements Serializable{
 	private Double preco;
 	private Integer quantidade;
 
+
 	public ItemPedidoDTO() {
 	}
 	
@@ -26,6 +27,7 @@ public class ItemPedidoDTO implements Serializable{
 		descricao = obj.getDescricao();
 		preco = obj.getPreco();
 		quantidade = obj.getQuantidade();
+		
 	}
 
 	/**

@@ -1,4 +1,4 @@
-package br.com.systempro.stock.controller;
+ package br.com.systempro.stock.controller;
 
 import java.net.URI;
 import java.util.List;

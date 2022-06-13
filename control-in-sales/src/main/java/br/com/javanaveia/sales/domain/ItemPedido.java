@@ -1,7 +1,6 @@
 package br.com.javanaveia.sales.domain;
 
 import java.io.Serializable;
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Objects;
@@ -29,11 +28,12 @@ public class ItemPedido implements Serializable {
 	private String descricao;
 	private Double preco;
 	private Integer quantidade;
-
+	
 	@JsonIgnore
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "pedido_id")
 	private Pedido pedido;
+	
 
 	public ItemPedido() {
 	}
@@ -168,6 +168,7 @@ public class ItemPedido implements Serializable {
 	 * 
 	 * }
 	 */
+
 
 	public Double getValorTotal() {
 		double valor;

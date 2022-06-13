@@ -9,12 +9,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -31,9 +30,13 @@ public class Pedido implements Serializable {
 	private LocalDateTime instante;
 
 	private Long idProduto;
+	private Long idCliente;
 
 	@OneToMany(mappedBy = "pedido")
 	private List<ItemPedido> itens = new ArrayList<>();
+
+	@OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
+	private List<Cliente> clientes = new ArrayList<>();
 
 	public Pedido() {
 	}
@@ -62,7 +65,6 @@ public class Pedido implements Serializable {
 	/**
 	 * @return the instante
 	 */
-
 	public LocalDateTime getInstante() {
 		return instante;
 	}
@@ -89,17 +91,29 @@ public class Pedido implements Serializable {
 	}
 
 	/**
+	 * @return the idCliente
+	 */
+	public Long getIdCliente() {
+		return idCliente;
+	}
+
+	/**
+	 * @param idCliente the idCliente to set
+	 */
+	public void setIdCliente(Long idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	@JsonIgnore
+	public List<Cliente> getClientes() {
+		return clientes;
+	}
+
+	/**
 	 * @return the itens
 	 */
 	public List<ItemPedido> getItens() {
 		return itens;
-	}
-
-	/**
-	 * @param itens the itens to set
-	 */
-	public void setItens(List<ItemPedido> itens) {
-		this.itens = itens;
 	}
 
 	@Override
@@ -129,6 +143,8 @@ public class Pedido implements Serializable {
 		builder.append(getId());
 		builder.append(", Instante: ");
 		builder.append(sdf.format(getInstante()));
+		builder.append("Id do cliente: ");
+		builder.append(getIdCliente());
 		builder.append("\nDetalhes: \n");
 		for (ItemPedido ip : getItens()) {
 			builder.append(ip.toString());

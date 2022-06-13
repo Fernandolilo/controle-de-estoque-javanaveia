@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.javanaveia.sales.domain.Cliente;
+import br.com.javanaveia.sales.domain.Client;
 import br.com.javanaveia.sales.response.ClienteProxi;
 
 @RestController
@@ -17,8 +17,8 @@ public class ClienteController {
 	private ClienteProxi response;
 
 	@GetMapping(value = "/{id}")
-	public Cliente getClientes(@PathVariable("id") Long id) {
-		return response.getCliente(id);
+	public Client getClientes(@PathVariable("id") Long id) {
+		return response.getClienteById(id);
 	}
 
 }
