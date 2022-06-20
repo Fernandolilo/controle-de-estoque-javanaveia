@@ -2,6 +2,9 @@ package br.com.javanaveia.client.domain.DTO;
 
 import java.io.Serializable;
 
+import br.com.javanaveia.client.service.validation.ClienteInsert;
+
+@ClienteInsert
 public class ClientNewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
