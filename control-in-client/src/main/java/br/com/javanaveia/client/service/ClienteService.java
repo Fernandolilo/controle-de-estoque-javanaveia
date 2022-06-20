@@ -10,6 +10,8 @@ import br.com.javanaveia.client.domain.Cliente;
 import br.com.javanaveia.client.domain.Endereco;
 import br.com.javanaveia.client.domain.DTO.ClientNewDTO;
 import br.com.javanaveia.client.domain.DTO.ClienteDTO;
+import br.com.javanaveia.client.domain.response.Pedido;
+import br.com.javanaveia.client.domain.response.proxi.PedidoProxi;
 import br.com.javanaveia.client.enums.Perfil;
 import br.com.javanaveia.client.enums.TipoClient;
 import br.com.javanaveia.client.repositories.ClienteRepository;
@@ -19,15 +21,18 @@ import br.com.javanaveia.client.service.exceptions.ObjectNotFoundException;
 public class ClienteService {
 
 	private final ClienteRepository repository;
+	private final PedidoProxi pedidoProxi;
 
 	@Autowired
-	public ClienteService(ClienteRepository repository) {
+	public ClienteService(ClienteRepository repository, PedidoProxi pedidoProxi) {
 		this.repository = repository;
+		this.pedidoProxi = pedidoProxi;
 	}
 
 	public Cliente findById(Long id) {
-		Optional<Cliente> cliente = repository.findById(id);
-		return cliente.orElseThrow(() -> new ObjectNotFoundException("Identificador não encontrado" + "ID: "));
+		Optional<Cliente> cliente = repository.findById(id);	
+		return cliente.orElseThrow(
+				() -> new ObjectNotFoundException("Identificador não encontrado" + "ID: "));
 	}
 
 	public List<ClienteDTO>  findByName(String nome) {

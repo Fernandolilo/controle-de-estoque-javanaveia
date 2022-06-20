@@ -1,0 +1,8 @@
+server:
+  port: 5000
+  servlet:
+    context-path: /vendas-service
+spring:
+  application:
+    name: vendas-service
+    

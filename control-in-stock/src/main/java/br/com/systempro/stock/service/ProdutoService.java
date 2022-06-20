@@ -51,7 +51,8 @@ public class ProdutoService {
 	}
 
 	public Produto fromDTO(ProdutoDTO objDto) {
-		return new Produto(objDto.getId(), objDto.getNome(), objDto.getMarca(),objDto.getDescricao(), objDto.getPreco(),
+		return new Produto(objDto.getId(), objDto.getNome(), objDto.getMarca(),objDto.getDescricao(), 
+				objDto.getPreco(),  objDto.getMargem(), objDto.getPrecoVenda(),
 				objDto.getQuantidade(), objDto.getCategoria(), objDto.getFornecedor());
 
 	}

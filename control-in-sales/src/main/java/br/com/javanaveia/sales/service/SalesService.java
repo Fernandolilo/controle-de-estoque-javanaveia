@@ -29,7 +29,7 @@ public class SalesService {
 		obj.setIdProduto(obj.getIdProduto());
 		obj.setNome(pp.getNome());
 		obj.setMarca(pp.getMarca());
-		obj.setPreco(pp.getPreco() * 1.7);
+		obj.setPreco(pp.getPrecoVenda());
 		obj.setQuantidade(obj.getQuantidade());
 		obj = repository.save(obj);
 		

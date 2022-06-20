@@ -28,12 +28,11 @@ public class ItemPedido implements Serializable {
 	private String descricao;
 	private Double preco;
 	private Integer quantidade;
-	
+
 	@JsonIgnore
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "pedido_id")
 	private Pedido pedido;
-	
 
 	public ItemPedido() {
 	}
@@ -168,7 +167,6 @@ public class ItemPedido implements Serializable {
 	 * 
 	 * }
 	 */
-
 
 	public Double getValorTotal() {
 		double valor;

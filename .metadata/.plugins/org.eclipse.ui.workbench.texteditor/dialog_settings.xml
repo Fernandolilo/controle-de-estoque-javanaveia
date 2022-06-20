@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="ItemPedidoDTO"/>
+		<item key="selection" value="PrecoVenda"/>
 		<list key="findhistory">
+			<item value="Preco"/>
+			<item value="preco"/>
 			<item value="ProdutoDTO"/>
 			<item value="empresa"/>
 			<item value="Empresa"/>
@@ -21,10 +23,10 @@
 			<item value="Pedido"/>
 			<item value="ObjectNotFoundException"/>
 			<item value=" ObjectNotFoundException"/>
-			<item value="DataIntegrityViolationException"/>
-			<item value="Categoria"/>
 		</list>
 		<list key="replacehistory">
+			<item value="PrecoVenda"/>
+			<item value="precoVenda"/>
 			<item value="ItemPedidoDTO"/>
 			<item value="razaoSocial"/>
 			<item value="RazaoSocial"/>
@@ -38,8 +40,6 @@
 			<item value="DataIntegrityViolation"/>
 			<item value="DataIntegrityViolationException"/>
 			<item value="ObjectNotFoundException"/>
-			<item value=" ObjectNotFoundException"/>
-			<item value="ps"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

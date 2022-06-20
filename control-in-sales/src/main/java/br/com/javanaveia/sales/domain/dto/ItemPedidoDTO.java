@@ -25,7 +25,7 @@ public class ItemPedidoDTO implements Serializable{
 		nome = obj.getNome();
 		marca = obj.getMarca();
 		descricao = obj.getDescricao();
-		preco = obj.getPreco();
+		preco = obj.getPreco() *1.7;
 		quantidade = obj.getQuantidade();
 		
 	}

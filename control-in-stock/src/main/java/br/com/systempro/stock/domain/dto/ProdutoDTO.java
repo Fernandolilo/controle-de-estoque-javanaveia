@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
+
 import br.com.systempro.stock.domain.Categoria;
 import br.com.systempro.stock.domain.Fornecedor;
 import br.com.systempro.stock.domain.Produto;
@@ -16,6 +18,8 @@ public class ProdutoDTO implements Serializable {
 	private String marca;
 	private String descricao;
 	private Double preco;
+	private Double margem;
+	private Double precoVenda;
 	private Integer quantidade;
 	private Categoria categoria;
 	private Fornecedor fornecedor;
@@ -29,6 +33,8 @@ public class ProdutoDTO implements Serializable {
 		marca = obj.getMarca();
 		descricao = obj.getDescricao();
 		preco = obj.getPreco();
+		precoVenda = obj.getPrecoVenda();
+		margem = obj.getMargem();
 		quantidade = obj.getQuantidade();
 		categoria = obj.getCategoria();
 		fornecedor = obj.getFornecedor();
@@ -138,5 +144,34 @@ public class ProdutoDTO implements Serializable {
 	public Fornecedor getFornecedor() {
 		return fornecedor;
 	}
+
+	/**
+	 * @return the margem
+	 */
+	public Double getMargem() {
+		return margem;
+	}
+
+	/**
+	 * @param margem the margem to set
+	 */
+	public void setMargem(Double margem) {
+		this.margem = margem;
+	}
+
+	/**
+	 * @return the precoVenda
+	 */
+	public Double getPrecoVenda() {
+		return precoVenda;
+	}
+
+	/**
+	 * @param precoVenda the precoVenda to set
+	 */
+	public void setPrecoVenda(Double precoVenda) {
+		this.precoVenda = precoVenda;
+	}
+	
 
 }

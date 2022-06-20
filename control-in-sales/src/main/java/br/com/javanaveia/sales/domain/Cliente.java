@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.Objects;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -25,13 +24,8 @@ public class Cliente implements Serializable {
 	private String email;
 	private String cpfOuCnpj;
 
-	/*
-	 * @OneToMany(mappedBy = "cliente") private List<Pedido> pedidos = new
-	 * ArrayList<>();
-	 */
-
 	@JsonIgnore
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne()
 	@JoinColumn(name = "pedido_id")
 	private Pedido pedido;
 	
@@ -118,9 +112,7 @@ public class Cliente implements Serializable {
 		this.cpfOuCnpj = cpfOuCnpj;
 	}
 
-	/**
-	 * @return the pedidos
-	 */
+	@JsonIgnore
 	public Pedido getPedidos() {
 		return pedido;
 	}

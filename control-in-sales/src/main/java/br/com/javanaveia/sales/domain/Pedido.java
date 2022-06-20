@@ -14,6 +14,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -32,19 +34,24 @@ public class Pedido implements Serializable {
 	private Long idProduto;
 	private Long idCliente;
 
+	@ManyToOne()
+	@JoinColumn(name = "pedido_id")
+	private Empresa empresa;
+
 	@OneToMany(mappedBy = "pedido")
 	private List<ItemPedido> itens = new ArrayList<>();
 
-	@OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "pedido")
 	private List<Cliente> clientes = new ArrayList<>();
 
 	public Pedido() {
 	}
 
-	public Pedido(Long id, LocalDateTime instante, Long idProduto) {
+	public Pedido(Long id, LocalDateTime instante, Long idProduto, Empresa empresa) {
 		this.id = id;
 		this.instante = instante;
 		this.idProduto = idProduto;
+		this.empresa = empresa;
 
 	}
 
@@ -104,7 +111,7 @@ public class Pedido implements Serializable {
 		this.idCliente = idCliente;
 	}
 
-	@JsonIgnore
+	
 	public List<Cliente> getClientes() {
 		return clientes;
 	}
@@ -114,6 +121,20 @@ public class Pedido implements Serializable {
 	 */
 	public List<ItemPedido> getItens() {
 		return itens;
+	}
+
+	/**
+	 * @return the empresa
+	 */
+	public Empresa getEmpresa() {
+		return empresa;
+	}
+
+	/**
+	 * @param empresa the empresa to set
+	 */
+	public void setEmpresa(Empresa empresa) {
+		this.empresa = empresa;
 	}
 
 	@Override

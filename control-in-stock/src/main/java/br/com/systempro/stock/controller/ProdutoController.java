@@ -58,6 +58,8 @@ public class ProdutoController {
 		Produto obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
+	
+	
 	@Operation(summary = "FindByName Produtos")
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public List<ProdutoDTO> findByName(@RequestParam(name = "nome", required = true) String nome){

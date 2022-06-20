@@ -10,18 +10,18 @@ public class Produto implements Serializable {
 	private String nome;
 	private String marca;
 	private String descricao;
-	private Double preco;
+	private Double precoVenda;
 	private Integer quantidade;
 
 	public Produto() {
 	}
 
-	public Produto(Long id, String nome, String marca, String descricao, Double preco, Integer quantidade) {
+	public Produto(Long id, String nome, String marca, String descricao, Double precoVenda, Integer quantidade) {
 		this.id = id;
 		this.nome = nome;
 		this.marca = marca;
 		this.descricao = descricao;
-		this.preco = preco;
+		this.precoVenda = precoVenda;
 		this.quantidade = quantidade;
 	}
 
@@ -69,12 +69,12 @@ public class Produto implements Serializable {
 		this.descricao = descricao;
 	}
 
-	public Double getPreco() {
-		return preco;
+	public Double getPrecoVenda() {
+		return precoVenda ;
 	}
 
-	public void setPreco(Double preco) {
-		this.preco = preco;
+	public void setPrecoVenda(Double precoVenda) {
+		this.precoVenda = precoVenda;
 	}
 
 	public Integer getQuantidade() {
@@ -104,7 +104,7 @@ public class Produto implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Produto [id=" + id + ", nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + "]";
+		return "Produto [id=" + id + ", nome=" + nome + ", precoVenda=" + precoVenda + ", quantidade=" + quantidade + "]";
 	}
 
 }
