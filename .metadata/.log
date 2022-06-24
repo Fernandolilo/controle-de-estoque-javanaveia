@@ -3332,3 +3332,81 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:16:37.645
 !MESSAGE executing callback sts4.classpath.ICWCJUlg SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.355
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.359
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.360
+!MESSAGE buffering callback sts4.classpath.ICWCJUlg control-in-sales false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.361
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.364
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.366
+!MESSAGE buffering callback sts4.classpath.ICWCJUlg control-in-client false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.366
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.369
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.370
+!MESSAGE buffering callback sts4.classpath.ICWCJUlg consumirProduto false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.371
+!MESSAGE executing callback sts4.classpath.ICWCJUlg 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:24:01.476
+!MESSAGE executing callback sts4.classpath.ICWCJUlg SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.373
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.380
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.381
+!MESSAGE buffering callback sts4.classpath.ICWCJUlg control-in-sales false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.381
+!MESSAGE executing callback sts4.classpath.ICWCJUlg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.395
+!MESSAGE executing callback sts4.classpath.ICWCJUlg SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.604
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.606
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.608
+!MESSAGE buffering callback sts4.classpath.ICWCJUlg control-in-client false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.608
+!MESSAGE executing callback sts4.classpath.ICWCJUlg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.627
+!MESSAGE executing callback sts4.classpath.ICWCJUlg SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.807
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.809
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.810
+!MESSAGE buffering callback sts4.classpath.ICWCJUlg consumirProduto false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.811
+!MESSAGE executing callback sts4.classpath.ICWCJUlg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-06-24 06:25:47.834
+!MESSAGE executing callback sts4.classpath.ICWCJUlg SUCCESS [done]
