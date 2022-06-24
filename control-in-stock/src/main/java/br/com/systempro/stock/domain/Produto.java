@@ -166,14 +166,14 @@ public class Produto implements Serializable {
 	 * @return the precoVenda
 	 */
 	public Double getPrecoVenda() {
-		return precoVenda * margem;
+		return preco * margem;
 	}
 
 	/**
 	 * @param precoVenda the precoVenda to set
 	 */
 	public void setPrecoVenda(Double precoVenda) {
-		this.precoVenda = precoVenda * margem;
+		this.preco = preco * margem;
 	}
 
 	@Override

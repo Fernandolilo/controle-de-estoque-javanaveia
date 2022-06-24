@@ -6,25 +6,27 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="PrecoVenda"/>
+		<item key="selection" value="Venda"/>
 		<list key="findhistory">
+			<item value="Produto"/>
+			<item value="Cliente"/>
+			<item value="Sales"/>
+			<item value="IdPdroduto"/>
+			<item value="idPdroduto"/>
 			<item value="Preco"/>
 			<item value="preco"/>
 			<item value="ProdutoDTO"/>
 			<item value="empresa"/>
 			<item value="Empresa"/>
 			<item value="Date"/>
-			<item value="Produto"/>
 			<item value="Proco"/>
 			<item value="proco"/>
 			<item value="Preço"/>
 			<item value="preço"/>
-			<item value="nome"/>
-			<item value="Pedido"/>
-			<item value="ObjectNotFoundException"/>
-			<item value=" ObjectNotFoundException"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Venda"/>
+			<item value="idProduto"/>
 			<item value="PrecoVenda"/>
 			<item value="precoVenda"/>
 			<item value="ItemPedidoDTO"/>
@@ -36,10 +38,8 @@
 			<item value="Preco"/>
 			<item value="preco"/>
 			<item value="name"/>
-			<item value="Venda"/>
 			<item value="DataIntegrityViolation"/>
 			<item value="DataIntegrityViolationException"/>
-			<item value="ObjectNotFoundException"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
