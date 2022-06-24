@@ -31,6 +31,7 @@ public class Cliente implements Serializable {
 	private Long id;
 	private String nome;
 	private String email;
+	@JsonIgnore
 	private String password;
 	private String cpfOuCnpj;
 	private Integer tipo;

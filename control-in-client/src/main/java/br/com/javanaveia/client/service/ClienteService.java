@@ -4,13 +4,14 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.BCryptVersion;
 import org.springframework.stereotype.Service;
 
 import br.com.javanaveia.client.domain.Cliente;
 import br.com.javanaveia.client.domain.Endereco;
 import br.com.javanaveia.client.domain.DTO.ClientNewDTO;
 import br.com.javanaveia.client.domain.DTO.ClienteDTO;
-import br.com.javanaveia.client.domain.response.Pedido;
 import br.com.javanaveia.client.domain.response.proxi.PedidoProxi;
 import br.com.javanaveia.client.enums.Perfil;
 import br.com.javanaveia.client.enums.TipoClient;
@@ -22,11 +23,14 @@ public class ClienteService {
 
 	private final ClienteRepository repository;
 	private final PedidoProxi pedidoProxi;
+	private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
 	@Autowired
-	public ClienteService(ClienteRepository repository, PedidoProxi pedidoProxi) {
+	public ClienteService(ClienteRepository repository, PedidoProxi pedidoProxi,
+			BCryptPasswordEncoder bCryptPasswordEncoder) {
 		this.repository = repository;
 		this.pedidoProxi = pedidoProxi;
+		this.bCryptPasswordEncoder = bCryptPasswordEncoder;
 	}
 
 	public Cliente findById(Long id) {
@@ -46,7 +50,7 @@ public class ClienteService {
 	}
 
 	public Cliente fromDto(ClientNewDTO obj) {
-		Cliente cli = new Cliente(null, obj.getNome(), obj.getEmail(), obj.getPassword(), obj.getCpfOuCnpj(),
+		Cliente cli = new Cliente(null, obj.getNome(), obj.getEmail(), bCryptPasswordEncoder.encode(obj.getPassword()), obj.getCpfOuCnpj(),
 				TipoClient.toEnum(obj.getTipo()), Perfil.toEnum(obj.getPerfil()));
 		Endereco end = new Endereco(null, obj.getLogradouro(), obj.getNumero(), obj.getComplemento(), obj.getCep(),
 				obj.getCidade(), obj.getEstado(), cli);

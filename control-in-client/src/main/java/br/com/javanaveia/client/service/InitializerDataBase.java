@@ -3,6 +3,7 @@ package br.com.javanaveia.client.service;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import br.com.javanaveia.client.domain.Cliente;
@@ -17,16 +18,20 @@ public class InitializerDataBase {
 
 	private final ClienteRepository clienteRepository;
 	private final EnderecoRepository enderecoRepository;
+	private final BCryptPasswordEncoder bCryptPasswordEncoder;
+
 
 	@Autowired
-	public InitializerDataBase(ClienteRepository clienteRepository, EnderecoRepository enderecoRepository) {
+	public InitializerDataBase(ClienteRepository clienteRepository, 
+			EnderecoRepository enderecoRepository,  BCryptPasswordEncoder bCryptPasswordEncoder) {
 		this.clienteRepository = clienteRepository;
 		this.enderecoRepository = enderecoRepository;
+		this.bCryptPasswordEncoder = bCryptPasswordEncoder;
 	}
 
 	public void initialaizerDataBaseTest() {
 
-		Cliente cli1 = new Cliente(null, "Fernando", "fernando@gmail", "1234", "1234", TipoClient.PESSOAFISICA, Perfil.ADMINISTRADOR);
+		Cliente cli1 = new Cliente(null, "Fernando", "fernando@gmail",bCryptPasswordEncoder.encode("1234"), "1234", TipoClient.PESSOAFISICA, Perfil.ADMINISTRADOR);
 		cli1.getTelefones().addAll(Arrays.asList("11 1234-1234", "11 9 7894-7894"));
 
 		Endereco end1 = new Endereco(null, "Rua xpto", 56, "", "121345-000", "São Paulo", "SP", cli1);

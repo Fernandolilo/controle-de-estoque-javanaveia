@@ -17950,3 +17950,50 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-06-24 06:25:48,322 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-06-24 06:25:48,322 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-06-24 06:25:48,322 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-sales/src/test/resources
+2022-06-24 06:36:07,566 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:36:07,567 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:36:07,567 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-06-24 06:36:07,652 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-24 06:36:07,657 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:36:07,658 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:36:07,658 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-client/src/test/resources
+2022-06-24 06:37:22,464 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.6; built: 2021-06-29T15:28:56.259Z; git: 37e7731b4b142a882d73974ff3bec78d621bd674; jvm 17.0.2+8
+2022-06-24 06:37:22,525 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-06-24 06:37:22,568 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@39537273{/help,null,AVAILABLE}
+2022-06-24 06:37:22,596 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@52de90de{HTTP/1.1, (http/1.1)}{127.0.0.1:44003}
+2022-06-24 06:37:22,598 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@4000b307{STARTING}[10.0.6,sto=0] @1391011ms
+2022-06-24 06:50:55,165 [Worker-29: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:50:55,165 [Worker-29: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:50:55,166 [Worker-29: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-06-24 06:50:55,288 [Worker-29: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-24 06:50:55,293 [Worker-29: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:50:55,293 [Worker-29: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:50:55,293 [Worker-29: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-client/src/test/resources
+2022-06-24 06:56:40,422 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:56:40,422 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:56:40,422 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-06-24 06:56:40,513 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-24 06:56:40,517 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:56:40,517 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:56:40,517 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-client/src/test/resources
+2022-06-24 06:57:52,841 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:57:52,842 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:57:52,842 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-06-24 06:57:52,915 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-24 06:57:52,919 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:57:52,919 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:57:52,919 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-client/src/test/resources
+2022-06-24 06:58:03,389 [Worker-38: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:58:03,389 [Worker-38: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:58:03,390 [Worker-38: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-06-24 06:58:03,475 [Worker-38: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-24 06:58:03,479 [Worker-38: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:58:03,479 [Worker-38: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:58:03,479 [Worker-38: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-client/src/test/resources
+2022-06-24 06:58:51,200 [Worker-35: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:58:51,201 [Worker-35: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:58:51,201 [Worker-35: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-06-24 06:58:51,245 [Worker-35: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-06-24 06:58:51,248 [Worker-35: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-24 06:58:51,248 [Worker-35: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-24 06:58:51,248 [Worker-35: Launching control-in-client - ControlInClientApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/fernando/temp-sts/controle-estoque/control-in-client/src/test/resources
