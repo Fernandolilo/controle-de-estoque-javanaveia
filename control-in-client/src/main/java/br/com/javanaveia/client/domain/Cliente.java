@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import javax.persistence.CascadeType;
 import javax.persistence.CollectionTable;
@@ -35,7 +36,10 @@ public class Cliente implements Serializable {
 	private String password;
 	private String cpfOuCnpj;
 	private Integer tipo;
-	private Integer perfil;
+
+	@ElementCollection(fetch = FetchType.EAGER)
+	@CollectionTable(name = "PERFIS")
+	private Set<Integer> perfis = new HashSet<>();
 
 	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
 	private List<Endereco> enderecos = new ArrayList<>();
@@ -45,17 +49,17 @@ public class Cliente implements Serializable {
 	private Set<String> Telefones = new HashSet<>();
 
 	public Cliente() {
+		addPerfil(Perfil.USUARIO);
 	}
 
-	public Cliente(Long id, String nome, String email, String password, String cpfOuCnpj, TipoClient tipoCliente,
-			Perfil perfil) {
+	public Cliente(Long id, String nome, String email, String password, String cpfOuCnpj, TipoClient tipoCliente) {
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.password = password;
 		this.cpfOuCnpj = cpfOuCnpj;
 		this.tipo = (tipoCliente == null) ? null : tipoCliente.getCod();
-		this.perfil = (perfil == null) ? null : perfil.getCod();
+		addPerfil(Perfil.USUARIO);
 	}
 
 	/**
@@ -149,14 +153,13 @@ public class Cliente implements Serializable {
 	public void setTipo(TipoClient tipo) {
 		this.tipo = tipo.getCod();
 	}
-	
-	public Perfil getPerfil() {
-		return Perfil.toEnum(perfil);
+
+	public void addPerfil(Perfil perfil) {
+		perfis.add(perfil.getCod());
 	}
 
-
-	public void Perfil(Perfil perfil) {
-		this.perfil = perfil.getCod();
+	public Set<Perfil> getPerfis() {
+		return perfis.stream().map(x -> Perfil.toEnum(x)).collect(Collectors.toSet());
 	}
 
 	@Override

@@ -51,7 +51,7 @@ public class ClienteService {
 
 	public Cliente fromDto(ClientNewDTO obj) {
 		Cliente cli = new Cliente(null, obj.getNome(), obj.getEmail(), bCryptPasswordEncoder.encode(obj.getPassword()), obj.getCpfOuCnpj(),
-				TipoClient.toEnum(obj.getTipo()), Perfil.toEnum(obj.getPerfil()));
+				TipoClient.toEnum(obj.getTipo()));
 		Endereco end = new Endereco(null, obj.getLogradouro(), obj.getNumero(), obj.getComplemento(), obj.getCep(),
 				obj.getCidade(), obj.getEstado(), cli);
 		cli.getEnderecos().add(end);

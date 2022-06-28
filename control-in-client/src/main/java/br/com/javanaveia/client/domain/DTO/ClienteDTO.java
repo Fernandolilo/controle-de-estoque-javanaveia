@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import br.com.javanaveia.client.domain.Cliente;
 import br.com.javanaveia.client.domain.Endereco;
@@ -20,7 +21,7 @@ public class ClienteDTO implements Serializable {
 	private String cpfOuCnpj;
 	private List<Endereco> enderecos = new ArrayList<>();
 	private Set<String> telefones = new HashSet<>();
-	private Perfil perfil;
+	private Set<Perfil> perfil;
 	private TipoClient tipo;
 
 	public ClienteDTO() {
@@ -33,7 +34,7 @@ public class ClienteDTO implements Serializable {
 		cpfOuCnpj = obj.getCpfOuCnpj();
 		enderecos = obj.getEnderecos();
 		telefones = obj.getTelefones();
-		perfil = obj.getPerfil();
+		perfil = obj.getPerfis();
 		tipo = obj.getTipo();
 	}
 
@@ -117,14 +118,14 @@ public class ClienteDTO implements Serializable {
 	/**
 	 * @return the perfil
 	 */
-	public Perfil getPerfil() {
+	public Set<Perfil> getPerfil() {
 		return perfil;
 	}
 
 	/**
 	 * @param perfil the perfil to set
 	 */
-	public void setPerfil(Perfil perfil) {
+	public void setPerfil(Set<Perfil> perfil) {
 		this.perfil = perfil;
 	}
 

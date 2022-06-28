@@ -18,22 +18,23 @@ public class InitializerDataBase {
 
 	private final ClienteRepository clienteRepository;
 	private final EnderecoRepository enderecoRepository;
-	private final BCryptPasswordEncoder bCryptPasswordEncoder;
+	@Autowired
+	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 
 	@Autowired
 	public InitializerDataBase(ClienteRepository clienteRepository, 
-			EnderecoRepository enderecoRepository,  BCryptPasswordEncoder bCryptPasswordEncoder) {
+			EnderecoRepository enderecoRepository) {
 		this.clienteRepository = clienteRepository;
 		this.enderecoRepository = enderecoRepository;
-		this.bCryptPasswordEncoder = bCryptPasswordEncoder;
 	}
 
 	public void initialaizerDataBaseTest() {
 
-		Cliente cli1 = new Cliente(null, "Fernando", "fernando@gmail",bCryptPasswordEncoder.encode("1234"), "1234", TipoClient.PESSOAFISICA, Perfil.ADMINISTRADOR);
+		Cliente cli1 = new Cliente(null, "Fernando", "fernando@gmail",bCryptPasswordEncoder.encode("1234"), "1234", TipoClient.PESSOAFISICA);
 		cli1.getTelefones().addAll(Arrays.asList("11 1234-1234", "11 9 7894-7894"));
-
+		cli1.addPerfil(Perfil.ADMINISTRADOR);
+		
 		Endereco end1 = new Endereco(null, "Rua xpto", 56, "", "121345-000", "São Paulo", "SP", cli1);
 		
 		cli1.getEnderecos().add(end1);
