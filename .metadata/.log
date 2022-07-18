@@ -5849,3 +5849,117 @@ Contains: Missing org.springframework.boot:spring-boot-starter-cache:jar:sources
 !MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-cache:jar:sources:2.7.1-SNAPSHOT
 !SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-07-18 08:14:30.991
 !MESSAGE Missing org.springframework.boot:spring-boot-starter-cache:jar:sources:2.7.1-SNAPSHOT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:30.930
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:30.932
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:30.933
+!MESSAGE buffering callback sts4.classpath.qTzFWXMY Gateway false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:30.933
+!MESSAGE executing callback sts4.classpath.qTzFWXMY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:31.572
+!MESSAGE executing callback sts4.classpath.qTzFWXMY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:31.573
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:31.574
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:31.575
+!MESSAGE buffering callback sts4.classpath.qTzFWXMY Gateway false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:31.576
+!MESSAGE executing callback sts4.classpath.qTzFWXMY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:31.584
+!MESSAGE executing callback sts4.classpath.qTzFWXMY SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:38.497
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:38.501
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:38.502
+!MESSAGE buffering callback sts4.classpath.qTzFWXMY Gateway false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:38.503
+!MESSAGE executing callback sts4.classpath.qTzFWXMY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:17:38.514
+!MESSAGE executing callback sts4.classpath.qTzFWXMY SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-07-18 08:17:51.904
+!MESSAGE Could not download sources for io.netty:netty-resolver-dns-native-macos:4.1.78.Final:osx-x86_64
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:sources:4.1.78.Final
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:285)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.netty:netty-resolver-dns-native-macos:jar:sources:4.1.78.Final
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-07-18 08:17:51.904
+!MESSAGE Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:sources:4.1.78.Final
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-07-18 08:17:51.904
+!MESSAGE Missing io.netty:netty-resolver-dns-native-macos:jar:sources:4.1.78.Final
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:18:07.250
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:18:07.252
+!MESSAGE classpath=135 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:18:07.254
+!MESSAGE buffering callback sts4.classpath.qTzFWXMY Gateway false 135
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:18:07.254
+!MESSAGE executing callback sts4.classpath.qTzFWXMY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-18 08:18:07.267
+!MESSAGE executing callback sts4.classpath.qTzFWXMY SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-07-18 08:19:26.941
+!MESSAGE Could not download javadoc for io.netty:netty-resolver-dns-native-macos:4.1.78.Final:osx-x86_64
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.78.Final
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.78.Final
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-07-18 08:19:26.941
+!MESSAGE Could not resolve artifact io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.78.Final
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-07-18 08:19:26.941
+!MESSAGE Missing io.netty:netty-resolver-dns-native-macos:jar:javadoc:4.1.78.Final
