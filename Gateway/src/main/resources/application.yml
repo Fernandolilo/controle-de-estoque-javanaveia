@@ -1,8 +1,7 @@
-erver:
+server:
   port: 8765
   servlet:
     context-path: /gateway
-    
 eureka:
   client:
     service-url:

@@ -18,7 +18,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-
 import br.com.javanaveia.client.security.JWTAuthenticationFilter;
 import br.com.javanaveia.client.security.JWTAuthorizationFIlter;
 import br.com.javanaveia.client.security.JWTUtil;
@@ -83,5 +82,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
+    
 }
 
