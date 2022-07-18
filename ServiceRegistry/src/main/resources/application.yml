@@ -1,0 +1,10 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: naming-server
+eureka:
+  client:
+    #propriedade esta disendo para o eureka não se auto registrar, em produção o ideal é retirar eta config
+    register-with-eureka: false
+    fetch-registry: false

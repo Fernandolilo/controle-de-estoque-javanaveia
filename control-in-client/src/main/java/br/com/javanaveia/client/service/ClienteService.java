@@ -5,7 +5,6 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.BCryptVersion;
 import org.springframework.stereotype.Service;
 
 import br.com.javanaveia.client.domain.Cliente;
@@ -16,6 +15,8 @@ import br.com.javanaveia.client.domain.response.proxi.PedidoProxi;
 import br.com.javanaveia.client.enums.Perfil;
 import br.com.javanaveia.client.enums.TipoClient;
 import br.com.javanaveia.client.repositories.ClienteRepository;
+import br.com.javanaveia.client.security.UserSS;
+import br.com.javanaveia.client.service.exceptions.AuthorizationException;
 import br.com.javanaveia.client.service.exceptions.ObjectNotFoundException;
 
 @Service
@@ -34,6 +35,10 @@ public class ClienteService {
 	}
 
 	public Cliente findById(Long id) {
+		UserSS user = UserService.authenticated();
+		if(user == null || !user.hasRole(Perfil.ADMINISTRADOR) && !id.equals(user.getId())) {
+			throw new  AuthorizationException("Acesso negado");
+		}		
 		Optional<Cliente> cliente = repository.findById(id);	
 		return cliente.orElseThrow(
 				() -> new ObjectNotFoundException("Identificador não encontrado" + "ID: "));

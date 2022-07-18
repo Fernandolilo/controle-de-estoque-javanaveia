@@ -33,7 +33,7 @@ public class InitializerDataBase {
 
 		Cliente cli1 = new Cliente(null, "Fernando", "fernando@gmail",bCryptPasswordEncoder.encode("1234"), "1234", TipoClient.PESSOAFISICA);
 		cli1.getTelefones().addAll(Arrays.asList("11 1234-1234", "11 9 7894-7894"));
-		cli1.addPerfil(Perfil.ADMINISTRADOR);
+		//cli1.addPerfil(Perfil.ADMINISTRADOR);
 		
 		Endereco end1 = new Endereco(null, "Rua xpto", 56, "", "121345-000", "São Paulo", "SP", cli1);
 		

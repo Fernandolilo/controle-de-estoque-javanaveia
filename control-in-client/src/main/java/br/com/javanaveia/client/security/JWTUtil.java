@@ -1,6 +1,7 @@
 package br.com.javanaveia.client.security;
 
-import java.sql.Date;
+
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -30,7 +31,7 @@ public class JWTUtil {
         Claims claims = getClaims(token);
         if (claims != null) {
             String username = claims.getSubject();
-            Date expirationDate = (Date) claims.getExpiration();
+            Date expirationDate =  claims.getExpiration();
             Date now = new Date(System.currentTimeMillis());
             if (username != null && expirationDate != null && now.before(expirationDate)) {
                 return true;

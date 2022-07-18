@@ -36,6 +36,7 @@ public class ClienteController {
 		return ResponseEntity.ok().body(client);
 	}
 
+
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public List<ClienteDTO> findByName(@RequestParam(name = "nome") String nome) {
 		List<ClienteDTO> cliente = service.findByName(nome);

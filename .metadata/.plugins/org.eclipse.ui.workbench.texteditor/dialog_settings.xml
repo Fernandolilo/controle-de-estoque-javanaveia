@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Venda"/>
+		<item key="selection" value="CredencialDTO"/>
 		<list key="findhistory">
+			<item value="CredenciaisDTO"/>
 			<item value="Produto"/>
 			<item value="Cliente"/>
 			<item value="Sales"/>
@@ -22,9 +23,9 @@
 			<item value="Proco"/>
 			<item value="proco"/>
 			<item value="Preço"/>
-			<item value="preço"/>
 		</list>
 		<list key="replacehistory">
+			<item value="CredencialDTO"/>
 			<item value="Venda"/>
 			<item value="idProduto"/>
 			<item value="PrecoVenda"/>
@@ -39,7 +40,6 @@
 			<item value="preco"/>
 			<item value="name"/>
 			<item value="DataIntegrityViolation"/>
-			<item value="DataIntegrityViolationException"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
