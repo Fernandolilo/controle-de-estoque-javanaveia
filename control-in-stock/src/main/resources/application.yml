@@ -2,6 +2,12 @@ server:
   port: 8000
   servlet:
     context-path: /produto-service
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
 spring:
   application:
     name: produto-service
