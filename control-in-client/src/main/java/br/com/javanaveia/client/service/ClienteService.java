@@ -12,11 +12,8 @@ import br.com.javanaveia.client.domain.Endereco;
 import br.com.javanaveia.client.domain.DTO.ClientNewDTO;
 import br.com.javanaveia.client.domain.DTO.ClienteDTO;
 import br.com.javanaveia.client.domain.response.proxi.PedidoProxi;
-import br.com.javanaveia.client.enums.Perfil;
 import br.com.javanaveia.client.enums.TipoClient;
 import br.com.javanaveia.client.repositories.ClienteRepository;
-import br.com.javanaveia.client.security.UserSS;
-import br.com.javanaveia.client.service.exceptions.AuthorizationException;
 import br.com.javanaveia.client.service.exceptions.ObjectNotFoundException;
 
 @Service
@@ -24,21 +21,16 @@ public class ClienteService {
 
 	private final ClienteRepository repository;
 	private final PedidoProxi pedidoProxi;
-	private final BCryptPasswordEncoder bCryptPasswordEncoder;
+	
 
 	@Autowired
-	public ClienteService(ClienteRepository repository, PedidoProxi pedidoProxi,
-			BCryptPasswordEncoder bCryptPasswordEncoder) {
+	public ClienteService(ClienteRepository repository, PedidoProxi pedidoProxi) {
 		this.repository = repository;
 		this.pedidoProxi = pedidoProxi;
-		this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+	
 	}
 
-	public Cliente findById(Long id) {
-		UserSS user = UserService.authenticated();
-		if(user == null || !user.hasRole(Perfil.ADMINISTRADOR) && !id.equals(user.getId())) {
-			throw new  AuthorizationException("Acesso negado");
-		}		
+	public Cliente findById(Long id) {	
 		Optional<Cliente> cliente = repository.findById(id);	
 		return cliente.orElseThrow(
 				() -> new ObjectNotFoundException("Identificador não encontrado" + "ID: "));
@@ -55,7 +47,7 @@ public class ClienteService {
 	}
 
 	public Cliente fromDto(ClientNewDTO obj) {
-		Cliente cli = new Cliente(null, obj.getNome(), obj.getEmail(), bCryptPasswordEncoder.encode(obj.getPassword()), obj.getCpfOuCnpj(),
+		Cliente cli = new Cliente(null, obj.getNome(), obj.getEmail(), obj.getPassword(), obj.getCpfOuCnpj(),
 				TipoClient.toEnum(obj.getTipo()));
 		Endereco end = new Endereco(null, obj.getLogradouro(), obj.getNumero(), obj.getComplemento(), obj.getCep(),
 				obj.getCidade(), obj.getEstado(), cli);

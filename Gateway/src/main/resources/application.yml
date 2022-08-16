@@ -1,7 +1,5 @@
 server:
   port: 8765
-  servlet:
-    context-path: /gateway
 eureka:
   client:
     service-url:
@@ -15,3 +13,20 @@ spring:
         locator:
           enabled: true
           #lower-case-service-id: true
+      routes:      
+      - id: client-service
+        uri: lb://client-service
+        predicates:
+        - Path=/client-service/**  
+       
+      - id: produto-service
+        uri: lb://produto-service
+        predicates:
+        - Path=/produto-service/**
+        
+      - id: sales-service
+        uri: lb://sales-service
+        predicates:
+        - Path=/sales-service/**
+        
+        

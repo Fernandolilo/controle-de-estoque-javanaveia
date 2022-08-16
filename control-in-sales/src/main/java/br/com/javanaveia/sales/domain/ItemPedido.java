@@ -77,6 +77,9 @@ public class ItemPedido implements Serializable {
 		this.idProduto = idProduto;
 	}
 
+	public void setIdProduto1(Long idProduto) {
+		this.idProduto = idProduto;
+	}
 	/**
 	 * @return the nome
 	 */
@@ -161,14 +164,7 @@ public class ItemPedido implements Serializable {
 		this.pedido = pedido;
 	}
 
-	/*
-	 * public String getValorTotal() { double valor; valor = preco * quantidade;
-	 * return new DecimalFormat("#,##0.00").format(valor);
-	 * 
-	 * }
-	 */
-
-	public Double getValorTotal() {
+	public Double getSubTotal() {
 		double valor;
 		valor = preco * quantidade;
 		return valor;
@@ -202,7 +198,7 @@ public class ItemPedido implements Serializable {
 		builder.append("Identificador do item: ");
 		builder.append(getId());
 		builder.append("Valor Total: R$ ");
-		builder.append(nf.format(getValorTotal()));
+		builder.append(nf.format(getSubTotal()));
 		return builder.toString();
 	}
 

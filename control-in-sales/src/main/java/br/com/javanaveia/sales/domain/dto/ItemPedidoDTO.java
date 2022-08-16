@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 import br.com.javanaveia.sales.domain.ItemPedido;
 
-public class ItemPedidoDTO implements Serializable{
+public class ItemPedidoDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private Long id;
 	private Long idProduto;
 	private String nome;
@@ -15,19 +15,18 @@ public class ItemPedidoDTO implements Serializable{
 	private Double preco;
 	private Integer quantidade;
 
-
 	public ItemPedidoDTO() {
 	}
-	
+
 	public ItemPedidoDTO(ItemPedido obj) {
 		id = obj.getId();
 		idProduto = obj.getIdProduto();
 		nome = obj.getNome();
 		marca = obj.getMarca();
 		descricao = obj.getDescricao();
-		preco = obj.getPreco() *1.7;
+		preco = obj.getPreco() * 1.7;
 		quantidade = obj.getQuantidade();
-		
+
 	}
 
 	/**
@@ -127,5 +126,5 @@ public class ItemPedidoDTO implements Serializable{
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
-	
+
 }

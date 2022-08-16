@@ -1,6 +1,10 @@
 package br.com.javanaveia.sales.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.javanaveia.sales.response.EnderecoResponse;
 
 public class Client implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -9,6 +13,8 @@ public class Client implements Serializable {
 	private String nome;
 	private String email;
 	private String cpfOuCnpj;
+
+	private List<EnderecoResponse> enderecos = new ArrayList<>();
 
 	public Client() {
 	}
@@ -74,6 +80,20 @@ public class Client implements Serializable {
 	 */
 	public void setCpfOuCnpj(String cpfOuCnpj) {
 		this.cpfOuCnpj = cpfOuCnpj;
+	}
+
+	/**
+	 * @return the enderecos
+	 */
+	public List<EnderecoResponse> getEnderecos() {
+		return enderecos;
+	}
+
+	/**
+	 * @param enderecos the enderecos to set
+	 */
+	public void setEnderecos(List<EnderecoResponse> enderecos) {
+		this.enderecos = enderecos;
 	}
 
 }

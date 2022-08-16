@@ -125,6 +125,10 @@ public class Produto implements Serializable {
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
+	
+	public void addQuantidade(Integer quantidade) {
+		this.quantidade =+ quantidade;
+	}
 
 	public Categoria getCategoria() {
 		return categoria;

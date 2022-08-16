@@ -1,14 +1,19 @@
 package br.com.javanaveia.sales.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -24,11 +29,15 @@ public class Cliente implements Serializable {
 	private String email;
 	private String cpfOuCnpj;
 
+
+
+	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	private List<Endereco> enderecos = new ArrayList<>();
+
 	@JsonIgnore
 	@ManyToOne()
 	@JoinColumn(name = "pedido_id")
 	private Pedido pedido;
-	
 
 	public Cliente() {
 	}
@@ -129,6 +138,20 @@ public class Cliente implements Serializable {
 	 */
 	public void setPedido(Pedido pedido) {
 		this.pedido = pedido;
+	}
+
+	/**
+	 * @return the enderecos
+	 */
+	public List<Endereco> getEnderecos() {
+		return enderecos;
+	}
+
+	/**
+	 * @param enderecos the enderecos to set
+	 */
+	public void setEnderecos(List<Endereco> enderecos) {
+		this.enderecos = enderecos;
 	}
 
 	@Override

@@ -21,6 +21,8 @@ import javax.persistence.OneToMany;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import br.com.javanaveia.sales.domain.enums.StatusPedido;
+
 @Entity
 public class Pedido implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -31,28 +33,34 @@ public class Pedido implements Serializable {
 	@JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
 	private LocalDateTime instante;
 
+	private Integer status;
+
 	private Long idProduto;
 	private Long idCliente;
+	private Long idEndereco;
 
 	@ManyToOne()
-	@JoinColumn(name = "pedido_id")
+	@JoinColumn(name = "empresa_id")
 	private Empresa empresa;
 
 	@OneToMany(mappedBy = "pedido")
 	private List<ItemPedido> itens = new ArrayList<>();
 
-	@OneToMany(mappedBy = "pedido")
+	@OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Cliente> clientes = new ArrayList<>();
 
 	public Pedido() {
 	}
 
-	public Pedido(Long id, LocalDateTime instante, Long idProduto, Empresa empresa) {
+	public Pedido(Long id, LocalDateTime instante, StatusPedido status, Long idProduto, Long idCliente, Long idEndereco,
+			Empresa empresa) {
 		this.id = id;
 		this.instante = instante;
+		this.status = (status == null) ? null : status.getCod();
 		this.idProduto = idProduto;
+		this.idCliente = idCliente;
+		this.idEndereco = idEndereco;
 		this.empresa = empresa;
-
 	}
 
 	/**
@@ -84,6 +92,20 @@ public class Pedido implements Serializable {
 	}
 
 	/**
+	 * @return the status
+	 */
+	public StatusPedido getStatus() {
+		return StatusPedido.toEnum(status);
+	}
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(StatusPedido status) {
+		this.status = status.getCod();
+	}
+
+	/**
 	 * @return the idProduto
 	 */
 	public Long getIdProduto() {
@@ -111,7 +133,20 @@ public class Pedido implements Serializable {
 		this.idCliente = idCliente;
 	}
 
-	
+	/**
+	 * @return the idEndereco
+	 */
+	public Long getIdEndereco() {
+		return idEndereco;
+	}
+
+	/**
+	 * @param idEndereco the idEndereco to set
+	 */
+	public void setIdEndereco(Long idEndereco) {
+		this.idEndereco = idEndereco;
+	}
+
 	public List<Cliente> getClientes() {
 		return clientes;
 	}

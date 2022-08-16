@@ -58,7 +58,7 @@ public class ProdutoService {
 	}
 
 	public Produto insert(Produto obj) {
-		obj.setId(null);		
+		obj.setId(null);
 		return repository.save(obj);	
 	}
 

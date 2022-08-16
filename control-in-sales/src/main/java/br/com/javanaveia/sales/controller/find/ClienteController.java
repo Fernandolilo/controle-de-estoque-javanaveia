@@ -10,7 +10,7 @@ import br.com.javanaveia.sales.domain.Client;
 import br.com.javanaveia.sales.response.ClienteProxi;
 
 @RestController
-@RequestMapping(value = "clientes")
+@RequestMapping(value = "/cliente")
 public class ClienteController {
 
 	@Autowired
