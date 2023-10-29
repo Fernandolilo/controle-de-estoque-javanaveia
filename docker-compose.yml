@@ -1,0 +1,64 @@
+
+
+version: '3.8'
+
+services: 
+  service-registry:
+    container_name: registry
+    image: fernando2812/service-registry:0.0.1-SNAPSHOT
+    ports:
+      - 8761:8761
+    networks:
+      - java-na-veia
+    build:
+      context: .
+      dockerfile: service-registry/Dockerfile
+    networks: 
+      - java-na-veia
+      
+  service-produto:
+    container_name: produto-service
+    image: fernando2812/stock:0.0.1-SNAPSHOT
+    ports:
+      - 8000:8000
+    depends_on:
+      - service-registry
+    build:
+      context: .
+      dockerfile: stock/Dockerfile
+      
+    environment: 
+      TZ: America/Sao_Paulo
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://service-registry:8761/eureka
+      SPRING.APLLICATION.NAME: produto-service
+   
+    networks:
+      - java-na-veia
+    
+    
+
+  service-gateway:
+    container_name: gateway
+    image: fernando2812/gateway:0.0.1-SNAPSHOT
+    ports:
+      - 8765:8765
+    depends_on:
+      - service-registry
+    environment: 
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://service-registry:8761/eureka
+   
+    networks:
+      - java-na-veia
+    build:
+      context: .
+      dockerfile: service-registry/Dockerfile
+    networks: 
+      - java-na-veia
+      
+      
+  
+  
+  
+networks:
+  java-na-veia:
+    driver: bridge

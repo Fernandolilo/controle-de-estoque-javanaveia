@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/fernando/temp-sts/controle-estoque/stock"/>
+			<item value="/home/fernando/temp-sts/controle-estoque/controlinstock"/>
+			<item value="/home/fernando/temp-sts/controle-estoque/service-registry"/>
 			<item value="/home/fernando/temp-sts/bancodedadosmysql"/>
 			<item value="/home/fernando/temp-sts/controle-estoque/Inventory"/>
 		</list>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="/home/fernando/temp/sts-4.18.1.RELEASE/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.7.v20230425-1502/jre" version="17.0.7"/>
     <libraryInfo home="/opt/sts-4.14.0.RELEASE/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.2.v20220201-1208" version="17.0.2"/>
+    <libraryInfo home="/home/fernando/temp/sts-4.18.1.RELEASE/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.7.v20230425-1502" version="17.0.7"/>
     <libraryInfo home="/opt/sts-4.14.0.RELEASE/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.2.v20220201-1208/jre" version="17.0.2"/>
 </libraryInfos>
