@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="endereco"/>
+		<item key="selection" value="Produto"/>
 		<list key="findhistory">
+			<item value="ProductVO"/>
+			<item value="Product"/>
+			<item value="ProductRepository"/>
 			<item value="empresa"/>
 			<item value="Empresa"/>
 			<item value="Cliente"/>
@@ -20,11 +23,11 @@
 			<item value="preco"/>
 			<item value="ProdutoDTO"/>
 			<item value="Date"/>
-			<item value="Proco"/>
-			<item value="proco"/>
-			<item value="Preço"/>
 		</list>
 		<list key="replacehistory">
+			<item value="ProdutoDTO"/>
+			<item value="Produto"/>
+			<item value="ProdutoRepository"/>
 			<item value="endereco"/>
 			<item value="Endereco"/>
 			<item value="CredencialDTO"/>
@@ -37,17 +40,14 @@
 			<item value="RazaoSocial"/>
 			<item value="LocalDate"/>
 			<item value="Pedido"/>
-			<item value="Produto"/>
-			<item value="Preco"/>
-			<item value="preco"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="596"/>
 		<item key="DIALOG_Y_ORIGIN" value="178"/>
-		<item key="DIALOG_WIDTH" value="343"/>
-		<item key="DIALOG_HEIGHT" value="432"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
+		<item key="DIALOG_WIDTH" value="408"/>
+		<item key="DIALOG_HEIGHT" value="449"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|13.0|0|GTK|1|"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="448"/>

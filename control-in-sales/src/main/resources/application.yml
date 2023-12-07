@@ -2,12 +2,11 @@ server:
   port: 9000
   servlet:
     context-path: /sales-service
-
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-      
+            
 spring:
   application:
     name: sales-service
@@ -25,6 +24,15 @@ spring:
     default-property-inclusion: NON_NULL
     serialization: 
       fail-on-empty-beans: false
+      
+  rabbitmq:
+    connection-timeout: 5000
+    host: localhost
+    port: 5672
+    username: nando.systempro@hotmail.com
+    password: Fe2812
+       
+      
 jwt:
   secret: secretkey
   expiration: 300000 # 5 minutes duration by default: 5 minutes * 60 seconds * 1000 miliseconds

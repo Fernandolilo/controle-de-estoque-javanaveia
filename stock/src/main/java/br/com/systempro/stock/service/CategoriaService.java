@@ -23,16 +23,16 @@ public class CategoriaService {
 	private final CategoriaRepository repository;
 	private final EstoqueSendMesseger estoqueSendMesseger;
 
-
 	@Autowired
 	public CategoriaService(CategoriaRepository repository, EstoqueSendMesseger estoqueSendMesseger) {
 		this.repository = repository;
 		this.estoqueSendMesseger = estoqueSendMesseger;
 	}
+
 	public List<Categoria> findAll() {
 		return repository.findAll();
 	}
-	
+
 	public Page<Categoria> findPage(Integer page, Integer linesPerPage, String orderBy, String direction) {
 		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
 		return repository.findAll(pageRequest);
@@ -44,54 +44,38 @@ public class CategoriaService {
 				"Objeto não encontrado ID: " + ", Tipo: " + Categoria.class.getName()));
 	}
 
-	public Categoria update (Categoria obj) {
+	public Categoria update(Categoria obj) {
 		Categoria newObj = findById(obj.getId());
 		updateData(newObj, obj);
 		return repository.save(newObj);
 	}
-	
+
 	private void updateData(Categoria newObj, Categoria obj) {
 		newObj.setName(obj.getName());
 	}
-	
-	public Categoria fromDTO (CategoriaDTO objDto) {
+
+	public Categoria fromDTO(CategoriaDTO objDto) {
 		estoqueSendMesseger.sendMessageCategory(objDto);
 		return new Categoria(objDto.getId(), objDto.getName());
 	}
-	
+
 	public Categoria insert(Categoria obj) {
 		obj.setId(null);
-		return repository.save(obj);		
+		return repository.save(obj);
 	}
-	
+
 	public void delete(Long id) {
 		findById(id);
 		try {
-			repository.deleteById(id);
+			if (findById(id) != null) {
+				CategoriaDTO cat = new CategoriaDTO(id, null);
+				estoqueSendMesseger.sendMessageCategory(cat);
+			}
+				repository.deleteById(id);
 		} catch (DataIntegrityViolationException e) {
 			throw new DataIntegrityViolation("Não é possivel excluir uma categoria que possua produtos.");
 		}
-		
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

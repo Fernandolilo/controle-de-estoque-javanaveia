@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import br.com.javanaveia.sales.domain.Client;
+import br.com.javanaveia.sales.domain.response.Client;
 
 @FeignClient(name = "client-service"/* , url = "http://localhost:7000/client-service/clientes/" */)
 public interface ClienteProxi {
@@ -15,4 +15,5 @@ public interface ClienteProxi {
 	
 	@GetMapping(value = "client-service/endereco/{id}")
 	public EnderecoResponse getByEnrederco(@PathVariable("id") Long id);
+	
 }

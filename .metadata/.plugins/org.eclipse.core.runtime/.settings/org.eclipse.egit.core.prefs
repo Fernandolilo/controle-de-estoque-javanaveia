@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=/home/fernando/temp-sts/controle-estoque/.git\:
-GitRepositoriesView.GitDirectories.relative=.git\:
+GitRepositoriesView.GitDirectories=/home/fernando/temp-sts/controle-estoque/.git\:/home/fernando/temp-sts/.git\:
+GitRepositoriesView.GitDirectories.relative=.git\:/home/fernando/temp-sts/.git\:
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

@@ -16,7 +16,7 @@ public class TestConfiguration {
 	
 	@Bean
 	public boolean instantiateDatabase() {
-		dbService.instantiateDatabase();
+		//dbService.instantiateDatabase();
 		return true;
 	}
 

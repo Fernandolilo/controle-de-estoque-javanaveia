@@ -5,8 +5,8 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.javanaveia.sales.domain.Produto;
 import br.com.javanaveia.sales.domain.Sales;
+import br.com.javanaveia.sales.domain.response.Produto;
 import br.com.javanaveia.sales.repositoryes.SalesRepository;
 import br.com.javanaveia.sales.response.ProdutoResponse;
 

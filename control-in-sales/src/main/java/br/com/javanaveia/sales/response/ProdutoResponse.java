@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import br.com.javanaveia.sales.domain.Produto;
+import br.com.javanaveia.sales.domain.response.Produto;
 
 /*
  * @FeignClient(name = "produtos", url =

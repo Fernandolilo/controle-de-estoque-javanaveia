@@ -73,7 +73,7 @@ public class ProdutoController {
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<Void> update(@Valid @RequestBody ProdutoDTO objDto, @PathVariable Long id) {
 		Produto obj = service.fromDTO(objDto);
-		obj.setId(id);
+		//obj.setId(id);
 		obj = service.update(obj);
 		return ResponseEntity.noContent().build();
 	}

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/fernando/temp-sts/controle-estoque/leitorArquivos"/>
 			<item value="/home/fernando/temp-sts/controle-estoque/stock"/>
 			<item value="/home/fernando/temp-sts/controle-estoque/controlinstock"/>
 			<item value="/home/fernando/temp-sts/controle-estoque/service-registry"/>
@@ -23,6 +24,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/fernando/temp-sts/controle-estoque/leitorArquivos"/>
 			<item value="/home/fernando/temp-sts"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -47,18 +49,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.javanaveia.bancodedadosmysql.bancodedadosmysql"/>
-			<item value="com.javanaveia.bdmysql.bdmysql"/>
-			<item value="com.javanaveia.bdmysql"/>
 		</list>
 		<list key="groupId">
-			<item value="com.javanaveia.bancodedadosmysql"/>
-			<item value="com.javanaveia.bdmysql"/>
 		</list>
 		<list key="artifactId">
-			<item value="bancodedadosmysql"/>
-			<item value="bdmysql"/>
-			<item value="java-na-veia"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -74,10 +68,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="arq"/>
+			<item value="arquivos"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="arq"/>
+			<item value="arequivos"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -104,5 +102,11 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="580"/>
+		<item key="x" value="1806"/>
+		<item key="y" value="0"/>
 	</section>
 </section>

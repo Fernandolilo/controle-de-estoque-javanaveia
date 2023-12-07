@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.javanaveia.sales.domain.Client;
+import br.com.javanaveia.sales.domain.response.Client;
 import br.com.javanaveia.sales.response.ClienteProxi;
 
 @RestController

@@ -39,9 +39,9 @@
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="396"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
-		<item key="DIALOG_WIDTH" value="574"/>
-		<item key="DIALOG_HEIGHT" value="685"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
+		<item key="DIALOG_WIDTH" value="756"/>
+		<item key="DIALOG_HEIGHT" value="736"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|13.0|0|GTK|1|"/>
 	</section>
 	<section name="SourceActionDialog.methods">
 		<item key="VisibilityModifier" value="1"/>
@@ -63,11 +63,11 @@
 		<item key="RemoveFinal" value="false"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="390"/>
+		<item key="DIALOG_X_ORIGIN" value="0"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
-		<item key="DIALOG_WIDTH" value="587"/>
-		<item key="DIALOG_HEIGHT" value="703"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
+		<item key="DIALOG_WIDTH" value="708"/>
+		<item key="DIALOG_HEIGHT" value="736"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|13.0|0|GTK|1|"/>
 	</section>
 	<section name="DialogBounds_GenerateHashCodeEqualsDialog">
 		<item key="DIALOG_X_ORIGIN" value="435"/>
@@ -141,9 +141,9 @@
 	<section name="DialogBounds_AddDelegateMethodsDialog">
 		<item key="DIALOG_X_ORIGIN" value="383"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
-		<item key="DIALOG_WIDTH" value="607"/>
-		<item key="DIALOG_HEIGHT" value="551"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
+		<item key="DIALOG_WIDTH" value="801"/>
+		<item key="DIALOG_HEIGHT" value="680"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|13.0|0|GTK|1|"/>
 	</section>
 	<section name="WorkingSetModelAwareSelectionDialog">
 		<item key="ShowVisibleOnly" value="true"/>

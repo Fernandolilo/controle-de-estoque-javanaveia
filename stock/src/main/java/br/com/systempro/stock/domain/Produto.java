@@ -19,37 +19,32 @@ public class Produto implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id", nullable = false)
+	@Column(name = "id", nullable = false)
 	private Long id;
-	@Column(name="nome", length = 250, nullable = false)
+	@Column(name = "nome", length = 250, nullable = false)
 	private String nome;
-	@Column(name="marca", length = 50, nullable = false)
+	@Column(name = "marca", length = 50, nullable = false)
 	private String marca;
-	@Column(name="descricao", length = 350, nullable = false)
+	@Column(name = "descricao", length = 350, nullable = false)
 	private String descricao;
-	@Column(name="preco", length = 10, nullable = false)
+	@Column(name = "preco", length = 10, nullable = false)
 	private Double preco;
-	@Column(name="margem", length = 10, nullable = false)
+	@Column(name = "margem", length = 10, nullable = false)
 	private Double margem;
-	@Column(name="preco_venda", length = 10, nullable = false)
+	@Column(name = "preco_venda", length = 10, nullable = false)
 	private Double precoVenda;
-	@Column(name="quantidade", length = 20, nullable = false)
+	@Column(name = "quantidade", length = 20, nullable = false)
 	private Integer quantidade;
 
 	@ManyToOne
 	@JoinColumn(name = "categoria_id")
 	private Categoria categoria;
 
-	@ManyToOne
-	@JoinColumn(name = "fornecedor_id")
-	private Fornecedor fornecedor;
-
 	public Produto() {
 	}
 
-	public Produto(Long id, String nome, String marca, String descricao, Double preco, Double precoVenda,
-			Double margem, Integer quantidade,
-			Categoria categoria, Fornecedor fornecedor) {
+	public Produto(Long id, String nome, String marca, String descricao, Double preco, Double precoVenda, Double margem,
+			Integer quantidade, Categoria categoria) {
 		this.id = id;
 		this.nome = nome;
 		this.marca = marca;
@@ -59,7 +54,6 @@ public class Produto implements Serializable {
 		this.margem = margem;
 		this.quantidade = quantidade;
 		this.categoria = categoria;
-		this.fornecedor = fornecedor;
 	}
 
 	public Long getId() {
@@ -121,9 +115,9 @@ public class Produto implements Serializable {
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
-	
+
 	public void addQuantidade(Integer quantidade) {
-		this.quantidade =+ quantidade;
+		this.quantidade = +quantidade;
 	}
 
 	public Categoria getCategoria() {
@@ -132,20 +126,6 @@ public class Produto implements Serializable {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
-	}
-
-	/**
-	 * @return the fornecedore
-	 */
-	public Fornecedor getFornecedor() {
-		return fornecedor;
-	}
-
-	/**
-	 * @param fornecedore the fornecedore to set
-	 */
-	public void setFornecedor(Fornecedor fornecedor) {
-		this.fornecedor = fornecedor;
 	}
 
 	/**
@@ -176,6 +156,10 @@ public class Produto implements Serializable {
 		this.preco = preco * margem;
 	}
 
+	/**
+	 * @return the fornecedor
+	 */
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -196,8 +180,7 @@ public class Produto implements Serializable {
 	@Override
 	public String toString() {
 		return "Produto [id=" + id + ", nome=" + nome + ", marca=" + marca + ", descricao=" + descricao + ", preco="
-				+ preco + ", quantidade=" + quantidade + ", categoria=" + categoria + ", fornecedor=" + fornecedor
-				+ "]";
+				+ preco + ", quantidade=" + quantidade + ", categoria=" + categoria + "]";
 	}
 
 }

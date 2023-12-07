@@ -3,7 +3,7 @@ package br.com.javanaveia.sales.response;
 import java.io.Serializable;
 import java.util.Objects;
 
-import br.com.javanaveia.sales.domain.Client;
+import br.com.javanaveia.sales.domain.response.Client;
 
 public class EnderecoResponse implements Serializable {
 	private static final long serialVersionUID = 1L;
